@@ -1,6 +1,15 @@
-name = input('entre your name: ')
-age = input('enter your age: ' )
-print('hello',name)
+first = float(input('First: '))
+second  = float(input('Second: '))
+sum = first + second
+print("Sum", sum)
 
-print('are you realy',age,'years old')
+
+
+
+
+
+
+
+
+
 
