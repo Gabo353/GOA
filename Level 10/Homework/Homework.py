@@ -23,10 +23,17 @@ if math * 4 >= 20:
 print('--------------------------------------')
 
 
-for i in range(10):
-  for i in range(i):
-    print(i, end="")
-  print("----------------")
+name = '💓' 
+print(name * 1)
+print(name * 2)
+print(name * 3)
+print(name * 4)
+print(name * 5)
+print(name * 6)
+
+for i in range(100):
+   print('💓' * 1)
+print("----------------")
 
 
 age = int(input('Your age: '))
