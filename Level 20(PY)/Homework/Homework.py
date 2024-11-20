@@ -14,7 +14,7 @@ for i in range(len(num)):
     print(num[i])   
                                          
 for i in range(len(numb)):
-   if numb[i] %5 == 0:
+   if numb[i] %5 == 0 and numb[i] %3 == 0:
      print(numb[i])
 
 print('-------------------------------')
