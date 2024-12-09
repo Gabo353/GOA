@@ -1,0 +1,15 @@
+body{
+
+background-color: rgb(192, 192, 192);
+
+}
+.silver{
+
+color:hsl(0, 1%, 30%)
+
+}
+p{
+font-weight: 800;
+color:hsl(0, 1%, 30%)
+
+}
