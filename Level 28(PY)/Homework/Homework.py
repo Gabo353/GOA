@@ -16,6 +16,8 @@ def no_space(x):
     return x.replace(' ','')
 #5
 def sum_array(a):
+      if len(a)>1:  
         for i in range(len(a)):
             return sum(a)
-    
+      else:
+        return sum(a)*0
