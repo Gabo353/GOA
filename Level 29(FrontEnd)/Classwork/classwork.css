@@ -1,0 +1,13 @@
+.p1{
+font-family: 'Agu display';
+font-weight: 400;
+}
+.p2{
+font-family: 'lomi';
+font-weight: 600;
+
+}
+@font-face {
+    font-family: 'lomi';
+    src: url(./Fonds/Agu_Display\,Playwrite_GB_J_Guides.zip);
+}
