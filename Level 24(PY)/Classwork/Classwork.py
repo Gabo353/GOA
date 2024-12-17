@@ -1,16 +1,16 @@
-#num = 'Me gabo var' 
-#message = "Gamarjoba,Rogor xar? {}".format(num = ''mgeli)
-#print(message)
+num = 'Me gabo var' 
+message = "Gamarjoba,Rogor xar? {}".format #idk mistake
+print(message)
 
-#print('-----------split---------------')
-#_string = 'shaurma ar aris xinkalze uketesi'
-#_split_string = _string.split(' ')
-#print(_split_string)
+print('-----------split---------------')
+_string = 'shaurma ar aris xinkalze uketesi'
+_split_string = _string.split(' ')
+print(_split_string)
 
 
-#_string = ['jobnis' , 'jobni' , 'ar' , 'dailevao']
-#joined_string = " ! ".join(_string)
-#print(joined_string)
+_string = ['jobnis' , 'jobni' , 'ar' , 'dailevao']
+joined_string = " ! ".join(_string)
+print(joined_string)
 
 
 _str_of_vowel = "a u d e"
