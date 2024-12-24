@@ -1,0 +1,21 @@
+*{
+margin: 0px;
+padding:0px;
+box-sizing: border-box;
+
+}
+body{
+
+background-color: rgb(238, 238, 238);
+
+}
+a{
+padding-left: 40px;
+color: grey;
+
+}
+.d1,.d2{
+
+background-color: rgba(119, 136, 153, 0.573);
+
+}

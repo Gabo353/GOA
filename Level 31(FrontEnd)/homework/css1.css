@@ -1,0 +1,27 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+
+background-color: rgb(244, 164, 96);
+
+}
+a{
+
+color:brown;
+margin-left: 43px;
+
+}
+
+.d1,.d2{
+background-color: rgb(220, 133, 56);
+
+}
+.h{
+
+background-color: rgb(244, 164, 96);
+
+}

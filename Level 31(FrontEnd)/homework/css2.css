@@ -1,0 +1,21 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+body{
+
+background-color: rgb(222, 84, 60);
+
+}
+a{
+
+color: rgb(102, 5, 5);
+margin-left: 40px;
+
+}
+.d1,.d2{
+
+color: rgb(102, 5, 5);
+
+}

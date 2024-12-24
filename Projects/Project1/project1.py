@@ -2,7 +2,7 @@ print('Mini phone interface')
 print('calc = calculator')
 print('Tran = Translator')
 
-# apps = input('Any app: ')
+
 
 def calculator():
     isrunning = True
