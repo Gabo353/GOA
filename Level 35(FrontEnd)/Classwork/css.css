@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+body{
+background-repeat: no-repeat;
+background-image: url('./chihuhua.png');
+background-size: cover;
+}
+
+h1,p{
+
+color:goldenrod
+
+}
+p{
+
+
+}
+.d3{
+
+background-image: url(./image.png);
+background-repeat: no-repeat;
+border-radius: 50%;
+border: 5px solid ;
+
+height: 200px;
+width: 200px;
+}
+
+h3{
+font-size: 18px;
+color:goldenrod;
+text-align: center;
+
+margin-top: 10px;
+
+}
