@@ -1,12 +1,18 @@
 body{
 
-background-image: url(./image.png);
+background-image: url(./BMW.png);
 background-repeat: no-repeat;
 background-size: cover;
 }
-h3{
 
+p{
 text-align: center;
+color:blue;
 
+
+}
+h1{
+
+color: blue;
 
 }

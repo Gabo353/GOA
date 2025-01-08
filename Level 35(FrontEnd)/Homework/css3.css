@@ -1,0 +1,16 @@
+body{
+
+background-image: url(./woodpecker.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+p{
+
+text-align: center;
+color:red
+}
+h1{
+
+color:red
+
+}
