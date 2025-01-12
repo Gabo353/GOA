@@ -1,0 +1,24 @@
+body{
+
+background-image: url(./sea.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+div{
+
+width: 400px;
+height: 400px;
+background-image: linear-gradient(200deg,lightblue,blue);
+
+margin: 0 auto;
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 3px;
+padding-bottom: 120px;
+}
+button{
+
+background-color: rgb(59, 59, 254);
+
+
+}
