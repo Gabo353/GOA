@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ul{
+margin-left: 150px;
+list-style-image: url(./image.png);
+list-style-type: decimal;
+list-style-position: outside;
+}
+
+li{
+
+font-family: 'Roboto';
+
+}
+p{
+
+font-family: 'Roboto';
+
+
+}
+body{
+
+background-image: linear-gradient(rgb(255, 170, 0),rgb(255, 208, 0));
+
+
+}
