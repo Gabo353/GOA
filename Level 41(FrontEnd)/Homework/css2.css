@@ -1,0 +1,41 @@
+body{
+
+background-image: linear-gradient(rgb(0, 255, 174),rgb(225, 0, 255));
+background-repeat: no-repeat;
+background-size: 10000px;
+
+}
+
+
+
+table{
+
+width: 600px;
+text-align: left;
+color:white;
+border-collapse: collapse;
+}
+th{
+padding-left:10px;
+padding-top: 15px;
+margin: auto;
+
+background-color: rgba(6, 6, 110, 0.577);
+
+}
+td{
+padding-left: 10px;
+padding-top: 5px;
+background-color: rgba(135, 135, 135, 0.723);
+
+}
+td:nth-child(odd):hover{
+
+background-color: rgba(112, 112, 112, 0.726);
+
+}
+td:nth-child(even):hover{
+
+    background-color: rgba(112, 112, 112, 0.726);
+    
+}

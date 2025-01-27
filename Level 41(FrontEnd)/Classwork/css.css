@@ -1,0 +1,36 @@
+body{
+
+background-image: url(./image.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#1:link{
+
+color: lightBlue;
+background-color: white;
+
+}
+
+#2:visited{
+
+   color: lightblue;
+   background-color: white;
+}
+#3:active{
+
+color:purple;
+background-color: white;
+}
+
+#4:hover{
+
+color: blueviolet;
+
+}
+
+p,h1,h2,a{
+
+color:white;
+
+}

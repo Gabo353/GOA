@@ -1,0 +1,50 @@
+table{
+
+border: 1px solid black;
+
+}
+tr:nth-child(1){
+
+    background-color:rgb(1, 152, 122);
+    color:white;
+    }
+tr:nth-child(2):hover{
+
+    background-color:rgb(221, 221, 221) ;
+}
+
+tr:nth-child(3):hover{
+
+    background-color:rgb(245, 245, 245) ;
+   
+}
+
+tr:nth-child(4):hover{
+
+    background-color:rgb(245, 245, 245) ;
+}
+
+tr:nth-child(5):hover{
+
+    background-color:rgb(245, 245, 245) ;
+}
+tr:nth-child(6):hover{
+
+    background-color:rgb(245, 245, 245) ;
+}
+
+tr:nth-child(7):hover{
+
+    background-color:rgb(245, 245, 245) ;
+}
+
+tr:nth-child(8):hover{
+
+    background-color:rgb(245, 245, 245) ;
+}
+
+th,td{
+
+padding: 2px 100px;
+
+}

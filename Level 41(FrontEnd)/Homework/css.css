@@ -1,0 +1,26 @@
+table{
+
+width: 600px;
+height: 300px;
+background-color: rgb(0, 255, 119);
+border-collapse: collapse;
+color:white;
+border: 0px;
+background-image: linear-gradient(90deg,#36f756d7 , #29b3a5ab);
+}
+
+td{
+text-align: left;
+padding: 5px;
+
+}
+td:nth-child(odd):hover{
+
+background-color: rgba(255, 255, 255, 0.178);
+
+}
+td:nth-child(even):hover{
+
+    background-color: rgba(255, 255, 255, 0.178);
+    
+}
