@@ -1,0 +1,55 @@
+body{
+display: flex;    
+/*gap: 10px;*/
+flex-direction: column;
+justify-content: space-between;
+height: 100vh;
+}
+
+
+/* .d1{
+
+    justify-content: space-between;
+height: 100px;
+width: 100px;
+background-color: blue;
+
+}
+
+.d2{
+
+    justify-content: space-between;    
+height: 100px;
+width: 100px;
+background-color: red;
+}
+
+.d3{
+height: 100px;
+width: 100px;
+background-color: yellow;
+} */
+
+.cont{
+
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+}
+
+
+
+.row{
+
+height: 100px;
+width: 100px;
+background-color: red;
+
+}
+.d1{
+
+height: 100px;
+width: 100px;
+background-color: rgb(0, 4, 255);
+}
