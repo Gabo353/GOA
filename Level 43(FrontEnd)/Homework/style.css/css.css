@@ -1,38 +1,61 @@
 body{
-background-image: linear-gradient(red,blue);
+background-image: linear-gradient(rgb(255, 196, 33),rgb(255, 54, 54));
 background-repeat: no-repeat;
 background-size: cover;
+height: 100%;
+display: flex;
+gap: 20px;
+justify-content: center;
 }
 
 
 #d1{
 width: 500px;
 height: 400px;
-background-image: linear-gradient(green,lightgreen);
+background-image: linear-gradient(360deg,green,lightgreen);
 padding: 10px;
+border-radius: 5% 5% 5% 5%;
 }
 
 #d2{
     width: 500px;
-    height: 450px;
-    background-image: linear-gradient(brown,white);
+    height: 500px;
+    background-image: linear-gradient(0deg,brown,rgb(237, 173, 142));
     padding: 10px;
+    border-radius: 5% 5% 5% 5%;
 }
 
 #d3{
 
     width: 500px;
-    height: 490px;
-    background-image: linear-gradient(rgb(186, 85, 62),rgb(190, 187, 6));
+    height: 500px;
+    background-image: linear-gradient(rgb(190, 187, 6),rgb(186, 85, 62));
     padding: 10px;
-
+    border-radius: 5% 5% 5% 5%;
 }
 
 #d4{
 
     width: 500px;
-    height: 300px;
-    background-image: linear-gradient(rgb(243, 141, 118),grey);
+    height: 400px;
+    background-image: linear-gradient(180deg,rgb(243, 141, 118),grey);
     padding: 10px;
+    border-radius: 5% 5% 5% 5%;         
+}
+.cont{
 
+display: flex;
+flex-direction: column;
+
+}
+img{
+
+border-radius: 5%;
+
+}
+.cont2{
+
+display: flex;
+flex-direction: column-reverse;
+gap: 22px;
 }
