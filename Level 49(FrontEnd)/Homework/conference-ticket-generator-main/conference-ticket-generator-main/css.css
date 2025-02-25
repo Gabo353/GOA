@@ -1,0 +1,32 @@
+body{
+background-image: url(./assets/images/background-desktop.png);
+background-repeat: no-repeat;
+background-size: cover;
+Font-size:  20px;
+}
+h1{
+
+color: white;
+font-family: 'Inconsolata';
+
+}
+p{
+
+color:hsl(252, 6%, 83%);
+font-family: 'Inconsolata';
+}
+label{
+margin-right: 470px;
+color: white;
+font-family: 'Inconsolata';
+}
+.i1{
+
+width: 100px;
+border: 3px dotted grey;
+border-radius: 8px;
+width: 500px;
+height: 200px;
+margin-left: 90px;
+background-color:rgba(grey);
+}
