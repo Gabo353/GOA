@@ -1,0 +1,17 @@
+.p-color {
+
+    color: red;
+
+}
+
+.p-color2 {
+
+    color: blue;
+
+}
+
+div {
+
+    display: flex;
+    gap: 5px;
+}

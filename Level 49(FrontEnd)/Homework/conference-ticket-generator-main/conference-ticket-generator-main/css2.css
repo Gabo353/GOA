@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     Font-size: 20px;
+    height: 100vh;
 }
 
 h1 {
@@ -133,4 +134,23 @@ button {
     font-weight: 100px;
     border-radius: 8px;
     border: hsl(7, 88%, 67%);
+}
+
+b {
+
+    color: hsl(7, 88%, 67%);
+
+}
+
+.b1 {
+
+    color: linear-gradient(red, white);
+
+}
+
+.scp {
+    height: 100px;
+    width: 100px;
+    background-image: url(./design/desktop-design-ticket.jpg);
+
 }
