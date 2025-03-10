@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1 {
+
+    background-color: hsl(0, 0%, 8%);
+    width: 400px;
+    height: 580px;
+    color: white;
+    font-family: 'inter';
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.font {
+
+    font-weight: 500;
+
+}
+
+.p1 {
+
+    color: hsl(75, 94%, 57%);
+
+}
+
+.p2 {
+
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.d3 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+button {
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    font-family: 'inter';
+    width: 300px;
+    margin: auto;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+}
+.bt-hover:hover{
+
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    font-family: 'inter';
+    font-weight: 500;
+    cursor: pointer;
+}
+img{
+
+border-radius: 50%;
+
+}

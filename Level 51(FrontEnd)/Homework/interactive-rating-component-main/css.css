@@ -70,3 +70,9 @@ button{
     font-family: 'Overpass';
     font-weight: 700;
 }
+
+.bg-hover:hover{
+
+background-color: hsla(0, 0%, 100%, 0.725);
+
+}
