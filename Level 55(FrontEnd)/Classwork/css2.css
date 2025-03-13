@@ -1,0 +1,21 @@
+body{
+
+    height: 100%;
+    width: 100vh;
+    background-color: lightblue;
+}
+.d-main{
+    width: 840px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.d1{
+    
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+}

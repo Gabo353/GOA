@@ -1,0 +1,15 @@
+body{
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+}
+div{
+
+    background-color: white;
+    border: 1px solid black;
+    font-size: medium;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
