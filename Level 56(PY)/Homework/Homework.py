@@ -29,3 +29,22 @@ def even_numbers(arr,n):
     return last
 
 #4
+def vowel_indices(word):
+    vowels = 'aeiouyAEIOUY'
+    result = []
+    for i in range(len(word)):
+        if word[i] in vowels:
+            result.append(i + 1)
+    return result
+
+#5
+def geometric_sequence_elements(a, x, n):
+    new = []
+    for i in range(n):
+        formula = a * (x ** i)
+        new.append(formula)
+    string = []
+    for term in formula:
+        string.append(str(term))
+    result = ', '.join(string)
+    return result
