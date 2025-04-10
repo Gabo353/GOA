@@ -1,0 +1,41 @@
+body{
+
+    font-family: 'Commissioner';
+}
+ul{
+
+    list-style-type: none;
+
+}
+a{
+
+    text-decoration: none;
+    color: white;
+}
+ul{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.cont{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

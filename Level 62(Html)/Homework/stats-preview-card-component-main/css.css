@@ -1,0 +1,81 @@
+body {
+
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+    border-radius: 7px;
+    background-color: hsl(244, 38%, 16%);
+    height: 350px;
+    width: 850px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Inter';
+    color: white;
+}
+
+img {
+
+    border-radius: 0px 7px 7px 0px;
+    height: 350px;
+    width: 350;
+
+}
+
+.spani {
+
+    color: hsl(277, 64%, 61%);
+
+}
+
+.in-card {
+
+    padding: 40px;
+
+}
+
+.hh1 {
+
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.pp1 {
+
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.last {
+
+    display: flex;
+    gap: 70px;
+}
+
+.last1,.last2,.last3 {
+    
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.s1,.s2,.s3{
+
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.ss1,.ss2,.ss3{
+
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.6); 
+    font-family: 'Lexend Deca';
+    font-weight: 300;
+}
