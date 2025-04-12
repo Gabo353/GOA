@@ -1,0 +1,24 @@
+body{
+
+    background-color: lightgreen;
+
+}
+div{
+
+    animation-name: wave;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes wave {
+    from{
+        transform: translate(1px);
+        transform: rotate(1px)
+
+    }
+    to{
+        transform: translate(1px);
+        transform: rotate(100px);
+        
+    }
+}

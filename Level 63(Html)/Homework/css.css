@@ -1,0 +1,347 @@
+body {
+
+    background-color: pink;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto';
+
+}
+
+.cards_keeper {
+
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+hr {
+
+    height: 10px;
+    background-color: lightgoldenrodyellow;
+
+}
+
+.cards1 {
+
+
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgreen;
+    animation: cards 3s ease 1;
+}
+
+.cards2 {
+
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgreen;
+    animation: cards 5s ease 1;
+    animation-delay: 1s;
+}
+
+.cards3 {
+
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgreen;
+    animation: cards 5s ease 1;
+    animation-delay: 2s;
+}
+
+@keyframes cards {
+    from {
+        transform: translate(1px, 1px);
+
+    }
+
+    to {
+
+        transform: translate(100px, 200px);
+
+    }
+
+}
+
+.cards4 {
+
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgreen;
+    animation: disco 7s ease 1 7s;
+}
+
+@keyframes disco {
+    0% {
+        transform: translate(red);
+        background-color: red;
+    }
+
+    5% {
+        transform: translate(blue);
+        background-color: blue;
+        height: 200px;
+    }
+
+    10% {
+        transform: translate(green);
+        background-color: green;
+        width: 200px;
+    }
+
+    15% {
+
+        transform: translate(yellow);
+        background-color: yellow;
+        height: 50px;
+    }
+
+    20% {
+
+        transform: translate(purple);
+        background-color: purple;
+        width: 40px;
+    }
+
+    25% {
+
+        transform: translate(pink);
+        background-color: pink;
+        width: 90px;
+        height: 250px;
+    }
+
+    30% {
+        transform: translate(red);
+        background-color: red;
+        width: 40px;
+        height: 100px;
+    }
+
+    35% {
+        transform: translate(white);
+        background-color: white;
+        width: 80px;
+        height: 300px;
+    }
+
+    40% {
+        transform: translate(yellow);
+        background-color: yellow;
+        width: 20px;
+        height: 50px;
+    }
+
+    45% {
+        transform: translate(purple);
+        background-color: purple;
+        width: 170px;
+        height: 50px;
+    }
+
+    50% {
+        transform: translate(lightblue);
+        background-color: lightblue;
+        width: 80px;
+        height: 20px;
+    }
+
+    55% {
+        transform: translate(red);
+        background-color: red;
+    }
+
+    60% {
+        transform: translate(blue);
+        background-color: blue;
+        height: 200px;
+    }
+
+    65% {
+        transform: translate(green);
+        background-color: green;
+        width: 200px;
+    }
+
+
+}
+
+.disco_text {
+
+    animation: disco_2 5s ease 14s;
+
+}
+
+@keyframes disco_2 {
+    0% {
+        transform: translate(red);
+        color: red;
+    }
+
+    5% {
+        transform: translate(blue);
+        color: blue;
+    }
+
+    10% {
+        transform: translate(green);
+        color: green;
+    }
+
+    15% {
+
+        transform: translate(yellow);
+        color: yellow;
+    }
+
+    20% {
+
+        transform: translate(purple);
+        color: purple;
+    }
+
+    25% {
+
+        transform: translate(pink);
+        color: pink;
+    }
+
+    30% {
+        transform: translate(red);
+        color: red;
+    }
+
+    35% {
+        transform: translate(white);
+        color: white;
+    }
+
+    40% {
+        transform: translate(yellow);
+        color: yellow;
+    }
+
+    45% {
+        transform: translate(purple);
+        color: purple;
+    }
+
+    50% {
+        transform: translate(lightblue);
+        color: lightblue;
+    }
+
+    55% {
+        transform: translate(red);
+        color: red;
+    }
+
+    60% {
+        transform: translate(blue);
+        color: blue;
+    }
+
+    65% {
+        transform: translate(green);
+        color: green;
+
+    }
+}
+
+.displaying{
+
+    display: flex;
+
+}
+.bounce {
+
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgreen;
+    border-radius: 50%;
+    animation: bounce 10s ease 21s 1;
+}
+
+.slid {
+
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgreen;
+    animation: slid 4s ease 31s 1;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translate(0px,0px);
+    }
+    20%{    
+        transform: translate(0px, 500px);
+
+    }   
+    30%{
+
+        transform: translate(0px,300px);
+
+    }
+    40%{
+        transform: translate(0px,500px);
+
+    }
+    50%{
+        transform: translate(0px,200px);
+
+    }
+    60%{
+
+        transform: translate(0px,500px);
+
+    }
+    70%{
+
+        transform: translate(0px,100px);
+
+    }
+    80%{
+        
+        transform: translate(0px,500px);
+
+    }
+
+}
+
+@keyframes slid {
+    from{
+
+        transform: (0px,0px);
+
+    }
+    to{
+
+        transform: translate(100px,0px);
+
+    }
+}
