@@ -1,0 +1,46 @@
+body{
+
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
+}
+
+.d1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: solid red 2px;
+    width: 100px;
+    height: 100px;
+}
+
+.main-div{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+
+@media (max-width: 768px) {
+    
+    .main-div{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 599px) {
+    
+    .main-div{
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
