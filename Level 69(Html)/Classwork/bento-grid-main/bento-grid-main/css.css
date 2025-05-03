@@ -1,0 +1,60 @@
+body{
+
+    height: 100vh;
+    width: 100%;       
+    background-color:hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+.d1{
+
+    background-color: hsl(256, 67%, 59%);
+
+}
+.d5{
+
+    background-color: hsl(256, 67%, 59%);
+
+}
+
+.d7{
+
+    background-color: hsl(31, 66%, 93%);
+
+}
+.d2{
+
+    background-color: hsl(0, 0%, 100%);
+
+}
+.d6{
+
+    background-color: hsl(0, 0%, 100%);
+
+}
+.d8{
+
+    background-color: hsl(39, 100%, 71%);
+    grid-row: span 2;
+}
+.d3{
+
+    background-color: hsl(39, 100%, 71%);
+
+}
+.d1{
+
+    background-color:hsl(256, 67%, 59%);
+    grid-column: span 2;
+    
+
+}
+.d4{
+
+    background-color: hsl(254, 88%, 90%);
+    grid-row: span 2;
+}

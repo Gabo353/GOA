@@ -1,0 +1,32 @@
+body {
+
+    background-color: pink;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+p{
+
+    background-color: lightblue;
+    width: 110px;
+    padding: 10px;
+    height: 150px;
+    border-radius: 8px;
+    border: 3px solid lightgreen;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 50%;
+
+}
+img{
+
+    height: 150px;
+    position: absolute;
+    top: 31%;
+    right: 50%; 
+    left: 50%;
+    border-radius: 10px;
+}

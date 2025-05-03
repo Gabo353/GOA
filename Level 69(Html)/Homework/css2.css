@@ -1,0 +1,44 @@
+body {
+
+    background-color: pink;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d2 {
+
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.main-div {
+    \height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.span {
+
+    grid-column: span 2;
+
+}
+.gorilla{
+
+    height: 300px;
+    width: 250px;
+
+}
+button{
+
+    background-color: lightblue;
+    border-radius: 8px;
+    border: 3px solid lightgreen;
+    height: 30px;
+}
