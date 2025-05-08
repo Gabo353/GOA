@@ -5,6 +5,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -16,7 +17,7 @@ body {
 }
 
 .main-div {
-    \height: 100%;
+    height: 100%;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,13 +43,25 @@ button{
     border: 3px solid lightgreen;
     height: 30px;
 }
+.stick{
+    position: sticky;
+    top: 0;
+    background-color: green;
+    width: 50%;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+
 
 @media (max-width:768px){
 
-    body{
+    .main-div{
 
         display: grid;
         grid-template-columns: 1fr;
+    
     }
 
 
