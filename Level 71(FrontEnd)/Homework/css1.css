@@ -1,0 +1,65 @@
+body {
+
+    background-color: pink;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1 {
+
+    background-color: lightblue;
+    border: solid lightgreen 3px;
+    border-radius: 8px;
+    height: 600px;
+    width: 550px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+.d2{
+
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bar{
+
+    height: 150px;
+    width: 170px;
+
+}
+.real{
+
+    height: 150px;
+    width: 200px;
+}
+.h{
+
+    height: 170px;
+    width: 390px;
+    grid-column: span 2;
+
+}
+h1::before{
+
+    color: lightblue;
+}
+h1::after{
+    
+    content: 'Barselona & Real Madrid';
+    color: black;
+    text-decoration: underline;
+}
+p::before{
+
+    content: "Yo, what’s up, football fam?! It’s your boy Garbiel, back again with another matchday vlog! Today’s a BIGone — it’s derby day! Barselona vs Real Madrid — you already know the atmosphere is gonna be electric! I’vegot my jersey on, the scarf’s ready, and I’m buzzing for this one!";
+
+}
+p::after{
+
+    content: '✅';
+
+}
