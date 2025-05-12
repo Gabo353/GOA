@@ -1,0 +1,64 @@
+body {
+
+    width: 100%;
+    height: 100vh;
+    background-color: lightpink;
+
+}
+
+h1 {
+
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto';
+    font-size: 50px;
+    position: sticky;
+    top: 0%;
+
+}
+
+h2 {
+
+    font-family: 'roboto';
+
+}
+
+.d-main {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+}
+
+.d-extra-main {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.d1 {
+
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid lightgreen;
+    width: 300px;    
+}
+
+img {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+
+}
+
+@media (max-width:600px) {
+        .d-main{
+
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+}
