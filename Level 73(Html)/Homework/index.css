@@ -1,0 +1,50 @@
+body {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+li {
+
+    list-style: none;
+
+}
+
+header {
+
+    width: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'roboto';
+}
+
+ul {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer {
+
+    background-color: black;
+    color: white;
+    font-family: 'roboto';
+    width: 100%;
+
+}
+

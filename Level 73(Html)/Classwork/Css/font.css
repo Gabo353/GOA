@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Kung Fu Panda';
+    src: url(./Fonts/KungFuPandaRegular-xYjV.ttf);
+}
+
+@font-face {
+    font-family: 'Black Han Sans';
+    src: url(./Fonts/BlackHanSans-Regular.ttf);
+}
+
+
+.normal{
+
+    font-family: 'Kung Fu Panda';
+
+}
+
+.primary{
+
+    font-family: 'Black Han Sans';
+
+}
