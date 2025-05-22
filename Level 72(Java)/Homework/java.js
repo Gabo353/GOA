@@ -16,7 +16,7 @@ function bgclick() {
 }
 
 //#4
-const inp = document.getElementById('inpute')
+const inpute = document.getElementById('inpute')
 
 function info(){
 
