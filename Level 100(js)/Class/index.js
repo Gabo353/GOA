@@ -1,0 +1,1 @@
+console.log('არ გვქონდა საკლასო solo project იბარებდნენ')
