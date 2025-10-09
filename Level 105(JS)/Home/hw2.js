@@ -5,6 +5,7 @@ function adder(list,add) {
 
     list.push(add)
     console.log(list)
+
 }
 
 adder(name_arr,new_name)

@@ -10,7 +10,7 @@ function tening(tin,spe,sume) {
 
         if (i % 2 == 0 && i % 5 == 0) {
 
-            spe.push(i)
+            spe.push(spe[i])
 
         }
 

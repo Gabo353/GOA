@@ -1,4 +1,4 @@
-let nameing = ['gela','gelagela','anzori','banazori'];
+let nameing = ['gela','gelagela','anzori','banazori','alazanir'];
 
 let new_arr = []
 

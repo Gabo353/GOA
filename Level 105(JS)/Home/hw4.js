@@ -2,17 +2,13 @@ let long_string = 'ohwowthisislong';
 
 let user_random_num = Number(prompt('Num:'));
 
-let yoma = ''
-function yo(str,num,boma) {
+function yo(str,num) {
 
-    for (let i = 0; i < num; i++) {
+    return str.slice(0,num)
+    
 
-        boma += str[i]
-
-    }
-    console.log(boma)
 }
 
-yo(long_string,user_random_num,yoma)
+console.log(yo(long_string,user_random_num))
 
 console.log('----------------------------------')
