@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+body {
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    font-family: 'Lexend';
+
+}
+
+header {
+
+    width: 100%;
+    height: 100px;
+    background-color: #ADFF2F;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.typeo {
+
+    font-size: 38px;
+    padding-left: 30px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+
+}
+
+.Home,.About,.courses {
+
+    background-color: #9cea27;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+    font-family: 'Lexend';
+    
+}
+
+.txt_bt {
+
+    
+    font-family: 'Lexend';
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    width: 80px;
+    
+}
+
+.txt_bt:hover {
+
+    color: white;
+
+}
+
+.Home:hover,.About:hover,.courses:hover {
+
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    height: 34px;
+    width: 84px;
+    font-family: 'Lexend';
+    color: white; 
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.goa_img {
+
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+}
+

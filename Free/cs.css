@@ -1,0 +1,32 @@
+body {
+
+    background-color: black;
+
+}
+
+.te {
+
+    text-decoration: none;
+    color: black;
+    padding: 70px;
+
+}
+
+.bt {
+
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.bt:hover {
+
+    background-color: green;
+
+}
+
+.te:hover {
+
+    color: purple;
+
+}
