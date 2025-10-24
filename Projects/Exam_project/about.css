@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
 body {
 
     height: 100vh;
@@ -79,3 +81,428 @@ header {
     border-radius: 10px;
 }
 
+main {
+
+    height: 100%;
+    width: 100%;  
+
+}
+
+.intro {
+
+    display: flex;
+    height: 100vh;
+
+}
+
+.intro_txt {
+
+    color: white;
+    font-family: 'Lexend';
+    font-size: 80px;
+    height: 100px;
+    width: 100px;
+    margin: 120px;
+
+}
+
+.props {
+
+    color: #ADFF2F;
+
+}
+
+.a1 {
+
+    text-decoration: none;
+    font-size: 60px;
+    color: white;
+
+}
+ul {
+
+    display: flex;
+    gap: 15px;
+    flex-flow: column;
+    margin-left: 80px;
+
+}
+.a1:hover {
+
+    color: #ADFF2F;
+    font-size: 70px;
+    transition: 0.2s;
+
+}
+
+.goa {
+
+    color: white;
+    font-family: 'Bitcount Grid Single';
+    font-size: 300px;
+    margin-top: 50px;
+
+}
+
+.gr {
+
+    color: #ADFF2F;
+
+}
+
+.stick_1 {
+
+    width: 700px;
+    height: 5px;
+    background-color: #ADFF2F;
+}
+
+.design {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.stick_2 {
+
+    width: 700px;
+    height: 5px;
+    background-color: white;
+
+}
+
+.hr {
+
+    height: 5px;
+    background-color: #ADFF2F;
+}
+
+.part_2 {
+
+    height: 100vh;
+    width: 90%;
+    background-color: black;
+    padding-left: 120px;
+
+}
+
+#Languge {
+
+    font-size: 60px;
+    color: white;
+    margin: 36%;
+}
+
+.main_div {
+    
+    display: flex;
+    gap: 50px;
+}
+
+.info_1 {
+
+    height: 200px;
+    width: 400px;
+    margin-top: 170px;
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}   
+
+.info_heding_1 {
+
+    color: white;
+    font-size: 30px;
+    color: #ADFF2F;
+}
+
+.info_para_1 {
+
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.goa_team {
+
+    height: 230px;
+    margin-left: 33%;
+    border-radius: 8px;
+}
+
+
+#MMA {
+
+    font-size: 60px;
+    color: white;
+    margin: 39%;
+
+}
+
+.part_3 {
+
+    height: 100vh;
+    width: 90%;
+    padding-left: 120px;
+
+}
+
+.part_3_main {
+    
+    display: flex;
+    gap: 430px;
+    align-items: center;
+
+}
+
+.part_3_txt {
+
+    height: 100px;
+    width: 600px;
+    padding-left: 20px;
+
+}
+
+.part_3_heading {
+
+    color: #DC143C;
+    font-size: 49px;
+}
+
+.part_3_para {
+
+    color: white;
+    font-size: 20px;
+
+}
+
+.goa_martial_img {
+
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 160px;
+}
+
+
+#Lesson {
+
+    color: white;
+    font-size: 60px;
+    margin-left: 46%;
+
+}
+
+.part_4 {
+
+    height: 100vh;
+    width: 90%;
+}
+
+.qve {
+
+    margin-top: 100px;
+    margin-left: 200px;
+    display: flex;
+    gap: 300px;
+}
+
+.for_txt {
+
+    width: 600px;
+
+}
+
+.discord_img {
+
+    height: 200px;
+    border-radius: 10px;
+}
+
+.part_4_heading_code {
+
+    color: #B1361E;
+    font-size: 37px;
+    
+}
+
+.part_4_heading_VS {
+
+    color: #5C2D91;
+    font-size: 37px;
+    
+}
+
+.part_4_heading {
+
+    color: #5865F2 ;
+    font-size: 37px;
+
+}
+
+.part_4_para {
+
+    color: white;
+
+}
+
+
+
+.footy {
+
+    position: relative;
+    left: 540px;
+    font-size: 20px;
+    color: grey;
+    margin-top: 100px;
+
+}
+
+.social {
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    margin-top: 300px;
+    width: 104%;
+    height: 30vh;
+    background-color: rgb(19, 19, 19);
+    padding-left: 108px;
+}
+
+
+.insta {
+
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    font-size: 18px;
+    color: grey;
+}
+
+.youtube {
+
+    display: flex;
+    align-items: center;    
+    gap: 5px; 
+    font-size: 18px;
+    color: grey;
+}
+
+.facebook {
+
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    font-size: 18px;
+    color: grey;
+}
+
+.discord {
+
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    font-size: 18px;
+    color: grey;
+
+}
+
+.instabram {
+
+    height: 40px;
+
+}
+
+.divington {
+
+    height: 50vh;
+    background-color: green;
+
+}
+
+.yu {
+
+    height: 40px;
+
+}
+
+.fc {
+
+    height: 40px;
+
+}
+
+.dc {
+
+    height: 40px;
+
+}
+
+.tok {
+
+    height: 40px;
+
+}
+
+.tik {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: grey;
+
+}
+
+.git {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: grey;
+
+}
+
+.hub {
+
+    height: 40px;
+
+}
+
+.S {
+
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.V {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: grey;
+
+}
+
+.wars {
+
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.code {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: grey;
+
+}
