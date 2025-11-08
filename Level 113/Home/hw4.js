@@ -5,6 +5,7 @@ let book_2 = {
     pages : 250
 
 }
+
 console.log('Values:',Object.values(book_2))
 console.log('Keys:',Object.keys(book_2))
 
