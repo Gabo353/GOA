@@ -5,9 +5,9 @@
 //ყველა შედეგი ცალ-ცალკე გამოიტანე console.log()-ით.
 
 
-let number_n = prompt('To get squar/squar root: ')
+let number_n = Number(prompt('To get squar/squar root: '))
 
-console.log('square',Math.round(Math.pow(number_n)))
+console.log('square',Math.pow(number_n,2))
 console.log('square root',Math.round(Math.sqrt(number_n)))
 
 console.log('----------------------------')

@@ -4,4 +4,17 @@
 //თუ მომხმარებლის რიცხვი დაემთხვა დაგენერირებულს — გამოიტანე "სწორია!",
 //სხვა შემთხვევაში "ცდები!".
 
-console.log((Math.random(1,10)))
+let guess = Math.round(Math.random() * 10 + 1)
+
+let users = Number(prompt('Guess number: '))
+
+if (guess == users) {
+
+    console.log(true)
+
+}
+else {
+
+    console.log(false)
+
+}

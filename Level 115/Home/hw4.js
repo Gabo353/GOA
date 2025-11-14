@@ -4,6 +4,6 @@ let c = 10
 let d = 20
 let e = 30
 
-console.log(Math.min(c,d,e))
+console.log(Math.min(c, d, e))
 
 console.log('----------------------------')

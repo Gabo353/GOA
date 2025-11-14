@@ -4,6 +4,6 @@
 let b = 20
 let a = 11
 
-console.log(Math.max(a,b))
+console.log(Math.max(a, b))
 
 console.log('----------------------------')
