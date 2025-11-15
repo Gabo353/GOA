@@ -11,10 +11,10 @@ let users = Number(prompt('Guess number: '))
 if (guess == users) {
 
     console.log(true)
-
+    console.log(guess)
 }
 else {
 
     console.log(false)
-
+    console.log(guess)
 }
