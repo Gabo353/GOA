@@ -9,9 +9,9 @@ for (let b of ies) {
 }
 
 let count = 0
-while (count < ies.length) {
+//while (count < ies.length) {
 
-    ies[count].textContent = 'virir'
-    count += 1
+//    ies[count].textContent = 'virir'
+//    count += 1
 
-}
+//}
