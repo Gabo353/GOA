@@ -1,2 +1,5 @@
 let div = document.getElementById('div4')
+let body = document.getElementsByTagName('body')
 
+
+div.innerHTML = "<style> @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); body {background-color: grey; font-family: 'Roboto';} div {height: 580px; width: 380px; background-color: white; border-radius: 10px; display: flex; flex-direction: column; align-items: center; gap: 3px;} img{width: 300px; border-radius: 10px;} .span1{font-size: 25px; font-weight: 500;} .span2{ color: grey; font-size: 18px;}</style> <br> <img src=./download.png> <br> <span class='span1'>Improve your front-end skills</span> <span class='span1'>by building project</span> <br> <span class='span2'>Scan the QR code to visit Frontend</span>  <span class='span2'>Mentor and take your coding skills to</span>  <span class='span2'>the next level</span>"

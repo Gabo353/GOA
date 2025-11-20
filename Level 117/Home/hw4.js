@@ -1,0 +1,3 @@
+let div = document.getElementById('div5')
+
+div.innerHTML = "<style> @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); body{background-color: gold; font-family: 'Roboto';} div {height: 600px; width: 450px; background-color: white; border-radius: 20px; border: 2px solid black; box-shadow: 5px 6px 1px 1px;} img{width: 400px; border-radius: 20px;} .learn{background-color: gold; font-weight: 500; padding: 5px; border-radius: 5px;} </style> <img src=smt.png> <span class='learn'>Learning</span> <span></span>"
