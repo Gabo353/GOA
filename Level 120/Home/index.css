@@ -1,0 +1,42 @@
+body {
+
+    height: 100vh;
+    width: 100%;
+
+}   
+
+#blue {
+
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 5px;
+
+}
+
+#red {
+
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 5px;
+
+}
+
+#yellow {
+
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 5px;
+    
+}
+
+#hold {
+
+    width: 400px;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    
+}
