@@ -21,6 +21,7 @@ body {
     font-family: 'Roboto';
     align-items: center;
     gap: 30px;
+
 }
 
 #for_inner {
@@ -31,7 +32,7 @@ body {
 
 }
 
-span {
+#reg {
     font-size: 28px;
 }
 
@@ -49,20 +50,47 @@ button{
     border: none;
     height: 30px;
     width: 175px;
+    background-color: rgba(255, 0, 13, 0.633);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+
+}
+#btt{
+
+    border: none;
+    height: 30px;
+    width: 175px;
     background-color: rgba(231, 231, 1, 0.825);
     color: white;
     font-size: 18px;
     font-weight: 700;
     border-radius: 50px;
 
-}   
+}  
+
+#btt:hover {
+
+    border: none;
+    height: 35px;
+    width: 180px;
+    background-color: rgba(231, 231, 1, 0.825);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.1s;
+
+}
 
 button:hover{
 
     border: none;
     height: 35px;
     width: 180px;
-    background-color: rgba(231, 231, 1, 0.825);
+    background-color: rgba(255, 0, 13, 0.633);
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -80,7 +108,16 @@ ul {
     font-family: 'Roboto';
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
 }   
 
+
+span{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+button{
+    margin-left: 30px;
+}

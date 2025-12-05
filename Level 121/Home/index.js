@@ -7,13 +7,15 @@ document.addEventListener('submit', function (e) {
     let list_name = ['Name: ', 'Surname: ', 'Age: ']
     let arr = [e.target.name.value, e.target.surname.value, e.target.age.value]
     let ul = document.createElement('ul')
-    
+
     count++
     for (let i = 0; i < 1; i++) {
 
         let acc = document.createElement('span')
         acc.textContent = `account number: ${count}`
-        
+
+        let btn = document.createElement('button')
+        btn.textContent = 'delete'
 
         ul.appendChild(acc)
 
@@ -22,11 +24,23 @@ document.addEventListener('submit', function (e) {
     for (let i = 0; i < arr.length; i++) {
         let li = document.createElement('li')
         li.textContent = `${list_name[i]}${arr[i]}`
-        
+
         ul.appendChild(li)
-        
+
     }
-    
+    for (let i = 0; i < 1; i++) {
+
+        let btn = document.createElement('button')
+        btn.textContent = 'delete'
+
+        btn.addEventListener('click', function () {
+            ul.remove()
+            count += -1
+        })
+
+        ul.appendChild(btn)
+
+    }
 
     document.body.appendChild(ul)
 })
