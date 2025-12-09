@@ -18,4 +18,5 @@ btn.addEventListener('click', function(){
 
     arr.push(user1)
     console.log(arr)
+    
 })
