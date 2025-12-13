@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            font-family: 'Roboto';
+        }
+
+        header {
+
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 1px 5px 4px;
+
+        }
+
+        #h21 {
+
+            color: aquamarine;
+
+        }
+
+        #mood {
+
+            border: none;
+            background-color: white;
+            font-size: 26px;
+
+        }
+
+        main {
+            
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #conteiner {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+
+
+        #text {
+
+            display: flex;
+            align-items: center;
+            background-color: rgb(44, 44, 44);
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 10px;
+
+        }
+        #randomer{
+
+            width: 120px;
+            height: 40px;
+            background-color: none;
+            border-radius: 10px;
+            border: solid 1px black;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 id="h21">Collor Flipper</h2> <button id="mood">Hex</button>
+    </header>
+    <main>
+        <div id="conteiner">
+
+            <div id="text">
+                <h2 id="main_h1">Background Color:</h2>
+                <h2 id="added"></h2>
+            </div>
+            <button id="randomer">Click me</button>
+            <input type="text" id="opp">
+            <span id="err"></span>
+        </div>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
