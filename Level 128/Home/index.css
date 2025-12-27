@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    
+}
+
+header {
+
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+img {
+
+    height: 120px;
+
+}
+
+.btn_holder {
+
+    position: relative;
+    left: 35%;
+
+}
+
+button {
+
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border: none;
+    font-weight: 700;
+
+}
+
+#clock {
+
+    height: 400px;
+    width: 400px;
+    background-image: url('./pink.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+#p_time {
+
+    font-size: 28px;
+
+}
+
+main {
+
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    
+    
+}   
+
+#info {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+#text {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#lorem,#lorem_2 {
+
+    color: grey;
+
+}
+
+h3 {
+
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+#buy {
+
+    color: black;
+    background-color: orange;
+    border-radius: 3px;
+    width: 140px;
+    font-size: 20px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+
+}   
+
+#btns,#btns_2 {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+#red,#blue,#black,#purple {
+
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+
+}
+#red {
+
+    background-color: red;
+
+}
+#blue {
+
+    background-color: blue;
+
+}
+#purple {
+
+    background-color: purple;
+
+}
+#black {
+
+    background-color: black;
+
+}
+
+#hrt_beat,#time {
+
+    background-color: rgba(172, 172, 172, 0.285);
+    color: black;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    height: 30px;
+    height: 30px;
+}
