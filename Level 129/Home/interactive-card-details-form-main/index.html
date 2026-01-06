@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="big">
+
+    <div id="design"></div>
+
+    <form>
+      <label for="card_name">CARDHOLDER NAME</label>
+      <input type="text" name="card_name" class="inp" placeholder="e.g Jane Appleseed">
+
+      <label for="card_num">CARD NUMBER</label>
+      <input type="text" name="card_num" class="inp" placeholder="e.g 1234 5678 9123 0000">
+      
+      <div id="lower_inputs">
+
+        <div id="data">
+
+
+          <div id="for_date_inputs">
+            <label>EXP.DATE (MM/YY)</label>
+            <div id="dtt">
+              <input type="num" placeholder="MM" class="date_m">
+              <input type="num" placeholder="YY" class="date_m">
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div id="cvv">
+          <label for="cvc">cvc</label>
+          <input type="text" name="cvc" class="inp" placeholder="e.g 123" id="cvcc">
+        </div>
+
+      </div>
+      <br>
+      <button>Confirm</button>
+
+    </form>
+
+    
+  </div>
+  <img src="./Screenshot 2026-01-05 221500.png" alt="front_card" id="img_1">
+  <img src="./images/bg-card-back.png" alt="front_card" id="img_2">
+
+</body>
+
+</html>

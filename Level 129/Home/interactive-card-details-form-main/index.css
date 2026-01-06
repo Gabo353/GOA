@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+
+    height: 100vh;   
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
+#big {
+
+    height: 100vh;   
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+
+}
+
+#design {
+
+    height: 100%;
+    width: 35%;
+    background-image: linear-gradient(120deg,black,purple,black);
+    padding: 0.1px;
+
+}   
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.inp {
+
+    border-radius: 6px;
+    border: 1px solid grey;
+    height: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+
+}   
+
+label {
+
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+}
+
+#lower_inputs {
+
+    display: flex;
+    gap: 29px;  
+    flex-direction: row;
+
+}
+
+#for_date_inputs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+#dtt {
+
+    display: flex;
+    gap: 6px;
+
+}
+
+.date_m {
+
+    width: 60px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    padding-left: 8px;
+
+}
+
+#cvv {
+
+    display: flex;  
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+button {
+
+    color: white;
+    height: 50px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.875);
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+
+}
+
+#img_1 {
+
+    position: absolute;
+    bottom: 50%;
+    left: 14%;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.348);
+
+}
+
+#img_2 {
+
+    position: absolute;
+    bottom: 25%;
+    left: 19%;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.348);
+
+}
+
+@media (max-width: 376px) {
+    
+    #big {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 100vh;
+    
+    }
+
+    #design {
+
+        width: 100%;
+        height: 70%;
+
+    }   
+
+    #img_2 {
+
+        position: absolute;
+        left: 35%;
+        bottom: 80%;
+        width: 200px;
+
+    }
+
+    #img_1 {
+
+        width: 200px;
+        position: absolute;
+        bottom: 73%;
+        z-index: 1;
+        
+    }
+
+    .inp {
+
+        width: 250px;
+
+    }
+    #cvcc {
+
+        width: 70px;
+
+    }
+    form {
+
+        margin-bottom: 200px;
+
+    }
+}   

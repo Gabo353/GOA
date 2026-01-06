@@ -1,44 +1,28 @@
-let p = document.getElementsByTagName('p')[0]
 let black_btn = document.getElementById('black')
 let red_btn = document.getElementById('red')
 let blue_btn = document.getElementById('blue')
 let purple_btn = document.getElementById('purple')
 let clock_div = document.getElementById('clock')
-let heart = document.getElementById('hrt_beat')
-let time_btn = document.getElementById('time')
 let p_timee = document.getElementById('p_time')
-let img = document.getElementById('heartImg')
 let buy_btn = document.getElementById('buy')
 let body_wannabe = document.getElementById('page_inner')
 
-function time() {
+let heart_btn = document.getElementById('hrt_beat')
+let time_btn = document.getElementById('time')
 
-    let timee = new Date()
-    let hr = timee.getHours()
-    let min = timee.getMinutes()
-    let sec = timee.getSeconds()
-
-    if (sec < 10) {
-
-        sec = `0${sec}`
-
-    }
-
-    if (min < 10) {
-
-        min = `0${min}`
-
-    }
-    if (hr < 10) {
-
-        hr = `0${hr}`
-
-    }
-
-    p.innerHTML = `${hr}:${min}:${sec}`
+function time() { 
+    
+    let timee = new Date() 
+    let hr = timee.getHours() 
+    let min = timee.getMinutes() 
+    let sec = timee.getSeconds() 
+    if (sec < 10) { sec = `0${sec}` } 
+    if (min < 10) { min = `0${min}`} 
+    if (hr < 10) { hr = `0${hr}` } 
+    p_timee.innerHTML = `${hr}:${min}:${sec}` 
 
 }
-setInterval(time, 1000)
+
 
 
 red_btn.addEventListener('click', function () {
@@ -63,63 +47,7 @@ purple_btn.addEventListener('click', function () {
 
 })
 
-heart.addEventListener('click', function () {
 
-    let imagine = "<img id='heartImg' src='./heart.png'>"
-    let random_heart_beat = Math.floor(Math.random() * 50 + 70)
-    let new_p = document.createElement('p')
-    p = new_p
-
-    clock_div.innerHTML = imagine
-    new_p.innerHTML = random_heart_beat
-    clock_div.appendChild(new_p)
-    clock_div.style.display = 'flex'
-    clock_div.style.alignContent = 'center'
-    clock_div.style.flexDirection = 'column'
-    new_p.style.position = 'relative'
-    new_p.style.bottom = '20px'
-    new_p.style.fontSize = '30px'
-
-    imagine.ani
-})
-
-time_btn.addEventListener('click', function () {
-
-    let img = document.getElementById('heartImg');
-    if (img !== '') {
-
-        img.remove()
-
-    }
-
-    p.style.position = 'relative'
-
-    let timee = new Date()
-    let hr = timee.getHours()
-    let min = timee.getMinutes()
-    let sec = timee.getSeconds()
-
-    if (sec < 10) {
-
-        sec = `0${sec}`
-
-    }
-
-    if (min < 10) {
-
-        min = `0${min}`
-
-    }
-    if (hr < 10) {
-
-        hr = `0${hr}`
-
-    }
-
-    p.innerHTML = `${hr}:${min}:${sec}`
-
-
-})
 
 
 buy_btn.addEventListener('click', function () {
@@ -132,6 +60,7 @@ buy_btn.addEventListener('click', function () {
     document.body.appendChild(buy_div)
     buy_div.appendChild(p_for_buy_div)
     buy_div.appendChild(p_for_buy_div_2)
+    buy_div.appendChild(document.createElement('br'))
     buy_div.appendChild(btn_out)
 
     buy_div.style.border = '3px solid blue'
@@ -179,5 +108,12 @@ buy_btn.addEventListener('click', function () {
 
 
     })
+
 })
+
+//თქვენი დავალებაა, რომ დაასრულოთ დღევანდელი პროექტი თავიდან ბოლომდე,ასევე თქვენს პროექტს დაუმატეთ responsive ,ასევე დაუმატეთ რომ ფულის ცემის მაჩვენებელი შეიცვალოს ყოველ 20 წამში ეთხელ რაიმე რენდომ მთელი რიცხვით 60 დან 110 მდე, და რომ დააჭერ buy now ღილაკს ეკრანის შუაში გამოჩნდეს რაიმე დივი სადაც ეწერება ტექსტი ==> You bought new wach,congratulations
+
+
+
+
 
