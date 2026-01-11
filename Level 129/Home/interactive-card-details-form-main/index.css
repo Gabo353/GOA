@@ -220,9 +220,11 @@ button {
 
         background-image: linear-gradient(120deg, black, purple, black);
         width: 100%;
-        height: 70%;
-
-    }
+        height: 35%;
+        position: absolute;
+        top: 0%;
+        z-index: -1;
+    }   
 
     #img_2 {
 
@@ -255,7 +257,9 @@ button {
 
     form {
 
-        margin-bottom: 200px;
+        position: relative;
+        top: 48%;
 
     }
+
 }

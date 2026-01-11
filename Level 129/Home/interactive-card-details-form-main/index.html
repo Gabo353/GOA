@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
@@ -19,10 +18,10 @@
 
     <form>
       <label for="card_name">CARDHOLDER NAME</label>
-      <input type="text" name="card_name" class="inp" placeholder="e.g Jane Appleseed">
+      <input type="text" name="card_name" class="inp" id="inp_1" placeholder="e.g Jane Appleseed">
 
       <label for="card_num">CARD NUMBER</label>
-      <input type="text" name="card_num" class="inp" placeholder="e.g 1234 5678 9123 0000">
+      <input type="text" name="card_num" class="inp" placeholder="e.g 1234 5678 9123 0000" id="card_long_num">
 
       <div id="lower_inputs">
 
@@ -48,7 +47,7 @@
 
       </div>
       <br>
-      <button>Confirm</button>
+      <button id="btn">Confirm</button>
 
     </form>
 
@@ -72,14 +71,15 @@
 
     <div id="spans_2">
 
-      <span class="info">JANE APPLESEED</span>
-      <span class="info">00/00</span>
+      <span class="info" id="card_owner">JANE APPLESEED</span>
+      <span class="info" id="exp_date">00/00</span>
 
     </div>
 
   </div>
   <img src="./images/bg-card-back.png" alt="front_card" id="img_2">
 
+  <script src="./index.js"></script>
 </body>
 
 </html>
