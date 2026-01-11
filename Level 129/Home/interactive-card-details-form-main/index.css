@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
 
-    height: 100vh;   
+    height: 100vh;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -12,7 +13,7 @@ body {
 
 #big {
 
-    height: 100vh;   
+    height: 100vh;
     width: 80%;
     display: flex;
     align-items: center;
@@ -24,17 +25,17 @@ body {
 
     height: 100%;
     width: 35%;
-    background-image: linear-gradient(120deg,black,purple,black);
+    background-image: linear-gradient(120deg, black, purple, black);
     padding: 0.1px;
 
-}   
+}
 
 form {
 
     display: flex;
     flex-direction: column;
     gap: 12px;
-    
+
 }
 
 .inp {
@@ -48,7 +49,7 @@ form {
     align-items: center;
     padding-left: 8px;
 
-}   
+}
 
 label {
 
@@ -61,7 +62,7 @@ label {
 #lower_inputs {
 
     display: flex;
-    gap: 29px;  
+    gap: 29px;
     flex-direction: row;
 
 }
@@ -93,7 +94,7 @@ label {
 
 #cvv {
 
-    display: flex;  
+    display: flex;
     flex-direction: column;
     gap: 6px;
 
@@ -113,12 +114,15 @@ button {
 
 #img_1 {
 
+    background-image: url(./images/bg-card-front.png);
+    background-size: cover;
     position: absolute;
-    bottom: 50%;
-    left: 14%;
-    width: 300px;
+    bottom: 55%;
+    left: 16%;
+    width: 260px;
+    height: 170px;
     border-radius: 6px;
-    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.348);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.348);
 
 }
 
@@ -127,14 +131,81 @@ button {
     position: absolute;
     bottom: 25%;
     left: 19%;
-    width: 300px;
+    width: 260px;
+    height: 170px;
     border-radius: 6px;
-    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.348);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.348);
+
+}
+
+#first_circle {
+
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+
+}
+
+#second_circle {
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    height: 10px;
+    width: 10px;
+    border-radius: 40px;
+
+}
+
+#circles {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    margin-top: 15px;
+
+}
+
+
+
+#spans {
+
+    display: flex;
+    gap: 8px;
+    margin: 45px 35px 35px 25px;
+
+
+}
+
+
+.span_card {
+
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+
+}
+
+#spans_2 {
+
+    display: flex;
+    gap: 85px;
+    margin-left: 21px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.info {
+
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
 
 }
 
 @media (max-width: 376px) {
-    
+
     #big {
 
         display: flex;
@@ -142,32 +213,32 @@ button {
         width: 100%;
         align-items: center;
         height: 100vh;
-    
+
     }
 
     #design {
 
+        background-image: linear-gradient(120deg, black, purple, black);
         width: 100%;
         height: 70%;
 
-    }   
+    }
 
     #img_2 {
 
         position: absolute;
-        left: 35%;
-        bottom: 80%;
-        width: 200px;
+        left: 16%;
+        bottom: 70%;
 
     }
 
     #img_1 {
 
-        width: 200px;
         position: absolute;
-        bottom: 73%;
+        bottom: 60%;
+        left: 8%;
         z-index: 1;
-        
+
     }
 
     .inp {
@@ -175,14 +246,16 @@ button {
         width: 250px;
 
     }
+
     #cvcc {
 
         width: 70px;
 
     }
+
     form {
 
         margin-bottom: 200px;
 
     }
-}   
+}
