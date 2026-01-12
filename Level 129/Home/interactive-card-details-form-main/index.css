@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
 
@@ -117,32 +118,32 @@ button {
     background-image: url(./images/bg-card-front.png);
     background-size: cover;
     position: absolute;
-    bottom: 55%;
-    left: 16%;
-    width: 260px;
-    height: 170px;
+    width: 320px;
+    height: 200px;
     border-radius: 6px;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.348);
+    bottom: 55%;
+    left: 16%;
 
 }
 
 #img_2 {
 
     position: absolute;
-    bottom: 25%;
-    left: 19%;
-    width: 260px;
-    height: 170px;
+    width: 320px;
+    height: 200px;
     border-radius: 6px;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.348);
+    bottom: 25%;
+    left: 19%;
 
 }
 
 #first_circle {
 
     background-color: white;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 40px;
 
 }
@@ -151,8 +152,8 @@ button {
 
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid white;
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     border-radius: 40px;
 
 }
@@ -175,14 +176,13 @@ button {
     gap: 8px;
     margin: 45px 35px 35px 25px;
 
-
 }
 
 
 .span_card {
 
     color: white;
-    font-size: 19px;
+    font-size: 25px;
     letter-spacing: 1px;
 
 }
@@ -194,12 +194,13 @@ button {
     margin-left: 21px;
     position: absolute;
     bottom: 15px;
+
 }
 
 .info {
 
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
 
 }
@@ -224,11 +225,16 @@ button {
         position: absolute;
         top: 0%;
         z-index: -1;
-    }   
+
+    }
 
     #img_2 {
 
         position: absolute;
+        width: 260px;
+        height: 170px;
+        border-radius: 6px;
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.348);
         left: 16%;
         bottom: 70%;
 
@@ -236,7 +242,13 @@ button {
 
     #img_1 {
 
+        background-image: url(./images/bg-card-front.png);
+        background-size: cover;
         position: absolute;
+        width: 260px;
+        height: 170px;
+        border-radius: 6px;
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.348);
         bottom: 60%;
         left: 8%;
         z-index: 1;
@@ -259,6 +271,72 @@ button {
 
         position: relative;
         top: 48%;
+
+    }
+
+    #first_circle {
+
+        background-color: white;
+        height: 20px;
+        width: 20px;
+        border-radius: 40px;
+
+    }
+
+    #second_circle {
+
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid white;
+        height: 10px;
+        width: 10px;
+        border-radius: 40px;
+
+    }
+
+    #circles {
+
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 20px;
+        margin-top: 15px;
+
+    }
+
+
+
+    #spans {
+
+        display: flex;
+        gap: 8px;
+        margin: 45px 35px 35px 25px;
+
+    }
+
+
+    .span_card {
+
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1px;
+
+    }
+
+    #spans_2 {
+
+        display: flex;
+        gap: 85px;
+        margin-left: 21px;
+        position: absolute;
+        bottom: 15px;
+
+    }
+
+    .info {
+
+        color: white;
+        font-size: 12px;
+        font-weight: 300;
 
     }
 

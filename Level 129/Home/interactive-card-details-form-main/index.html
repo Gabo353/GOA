@@ -19,10 +19,10 @@
     <form>
       <label for="card_name">CARDHOLDER NAME</label>
       <input type="text" name="card_name" class="inp" id="inp_1" placeholder="e.g Jane Appleseed">
-
+      <span id="val_name"></span>
       <label for="card_num">CARD NUMBER</label>
       <input type="text" name="card_num" class="inp" placeholder="e.g 1234 5678 9123 0000" id="card_long_num">
-
+      <span id="vald_num"></span>
       <div id="lower_inputs">
 
         <div id="data">
@@ -31,8 +31,9 @@
           <div id="for_date_inputs">
             <label>EXP.DATE (MM/YY)</label>
             <div id="dtt">
-              <input type="num" placeholder="MM" class="date_m">
-              <input type="num" placeholder="YY" class="date_m">
+              <input type="num" placeholder="MM" class="date_m" id="date_mm">
+              <input type="num" placeholder="YY" class="date_m" id="date_yy">
+              <span id="val_yy"></span>
             </div>
 
           </div>
