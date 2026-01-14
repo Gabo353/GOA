@@ -3,11 +3,11 @@ let input_name = document.getElementById('inp_1')
 let card_own = document.getElementById('card_owner')
 let input_number = document.getElementById('card_long_num')
 let spans = document.getElementsByClassName('span_card')
-let data = document.getElementById('exp_date')
 let num_val = document.getElementById('vald_num')
 let name_val = document.getElementById('val_name')
-let yy_val = document.getElementById('date_yy')
-let mm_val = document.getElementById('date_mm')
+let dates = document.getElementsByClassName('date_m')
+let date_val = document.getElementById('val_yy')
+let cvc_val = document.getElementById('cvc_val')
 
 form.addEventListener('submit', function (e) {
 
@@ -15,16 +15,26 @@ form.addEventListener('submit', function (e) {
     let check_num = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
     let name = input_name.value
-    
+
 
     let number = input_number.value
+    
+    for (let g = 0; g <= 10; g++) {
 
-    if (name == '') {
+        if (name == '') {
 
-        name_val.innerText = "This input must be filled"    
-        name_val.style.color = 'red'
-    }   
-    else{card_own.innerHTML = name}
+            name_val.innerText = "This input must be filled"
+            name_val.style.color = 'red'
+
+        }
+        else {
+            
+            name_val.innerHTML = name
+            name_val.innerHTML = ''
+            card_own.innerHTML = name
+        }
+
+    }
     if (number.length == 0) {
 
         num_val.innerText = 'This input must be fiiled'
@@ -86,11 +96,17 @@ form.addEventListener('submit', function (e) {
     }
 
 
-    if (mm_val[0] == '') {
+    if (dates[0].value == '' || dates[1].value) {
 
-        console.log('wrong')
+        date_val.innerText = 'Both inputs must be filled'
+        date_val.style.color = 'red'
+
 
     }
-    
+    else {
 
-})
+        date_val.innerHTML = ''
+
+    }
+
+})  
