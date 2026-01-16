@@ -5,9 +5,15 @@ let input_number = document.getElementById('card_long_num')
 let spans = document.getElementsByClassName('span_card')
 let num_val = document.getElementById('vald_num')
 let name_val = document.getElementById('val_name')
-let dates = document.getElementsByClassName('date_m')
-let date_val = document.getElementById('val_yy')
+
+let date_by_year = document.getElementById('date_yy')
+let date_by_month = document.getElementById('date_mm')
+let val_for_date = document.getElementById('val_date')
+let data_into_card = document.getElementById('exp_date')
+
 let cvc_val = document.getElementById('cvc_val')
+let cvc = document.getElementById('cvcc')
+let cvc_into_card = document.getElementById('for_cvc')
 
 form.addEventListener('submit', function (e) {
 
@@ -18,7 +24,7 @@ form.addEventListener('submit', function (e) {
 
 
     let number = input_number.value
-    
+
     for (let g = 0; g <= 10; g++) {
 
         if (name == '') {
@@ -28,7 +34,7 @@ form.addEventListener('submit', function (e) {
 
         }
         else {
-            
+
             name_val.innerHTML = name
             name_val.innerHTML = ''
             card_own.innerHTML = name
@@ -95,17 +101,63 @@ form.addEventListener('submit', function (e) {
 
     }
 
+    // --------------------cvc-----------------------
 
-    if (dates[0].value == '' || dates[1].value) {
+    if (cvc.value == '') {
 
-        date_val.innerText = 'Both inputs must be filled'
-        date_val.style.color = 'red'
+        cvc_val.innerText = 'Fill this'
+        cvc_val.style.color = 'red'
 
+    }
+    else if (cvc.value.length != 3) {
+
+        cvc_val.innerText = 'Use exaclty 3 numbers'
+        cvc_val.style.color = 'red'
+        
+    }
+    else {
+
+        cvc_val.innerHTML = ' '
+        cvc_into_card.innerText = cvc.value
+
+    }
+
+    // --------------------date-----------------------
+
+    if (date_by_year.value == '' && date_by_month.value == '') {
+
+        val_for_date.innerText = 'Both inputs must be filled'
+        val_for_date.style.color = 'red'
+
+    }
+    else if (date_by_year.value != '' && date_by_month.value == '') {
+
+        val_for_date.innerText = 'Both inputs must be filled'
+        val_for_date.style.color = 'red'
+
+    }
+    else if (date_by_year.value == '' && date_by_month.value != '') {
+
+        val_for_date.innerText = 'Both inputs must be filled'
+        val_for_date.style.color = 'red'
+
+    }
+    else if (date_by_year.value.length != 2) {
+
+        val_for_date.innerText = 'Write two numbers in each'
+        val_for_date.style.color = 'red'
+
+    }
+    else if (date_by_month.value.length != 2) {
+
+        val_for_date.innerText = 'Write two numbers in each'
+        val_for_date.style.color = 'red'
 
     }
     else {
 
-        date_val.innerHTML = ''
+        val_for_date.innerText = ''
+        data_into_card.innerHTML = `${date_by_month.value}/${date_by_year.value}`
 
     }
 

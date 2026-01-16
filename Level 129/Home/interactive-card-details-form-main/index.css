@@ -205,6 +205,27 @@ button {
 
 }
 
+#exp_date {
+
+    position: absolute;
+    left: 80%;
+    bottom: 7%;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+#for_cvc {
+
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: 43.3%;
+    left: 35%;
+
+}
+
 @media (max-width: 376px) {
 
     #big {
@@ -340,4 +361,13 @@ button {
 
     }
 
+    #for_cvc {
+
+        color: white;
+        font-size: 18px;
+        position: absolute;
+        bottom: 85.4%;
+        left: 75%;
+
+    }
 }
