@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 25px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.049);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto';
+    
+}
+
+img {
+
+    width: 250px;
+    border-radius: 8px;
+
+}
+
+#main {
+
+    width: 35%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.button {
+
+    height: 45px;
+    width: 175px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid rgb(139, 92, 92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    position: relative;
+    bottom: 6%;
+    left: 15%;
+    display: flex;
+    gap: 8px;
+
+}
+
+
+
+.products {
+
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.text_info {
+
+    color: rgb(139, 92, 92);
+    font-weight: 300;
+    font-size: 15px;
+
+
+}
+
+.text_info_2 {
+
+    font-size: 18px;
+
+}
+
+.price {
+
+    color: rgb(206, 59, 5);
+
+}
+
+#second_main {
+
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    bottom: 105%;
+    left: 56%;
+
+}
+
+#h1_2 {
+
+    font-size: 25px;
+    padding: 30px;
+    color: rgb(206, 59, 5);
+
+}
+
+#img_special {
+
+    width: 170px;
+    margin-left: 200px;
+
+}
+
+.notification {
+
+    color: rgb(139, 92, 92);
+    font-size: 19px;
+    padding-left: 130px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+
+}
+
+#added_icon {
+
+    width: 30px;
+
+}
+
+@media (max-width: 375px) {
+
+    body {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #main {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #second_main {
+
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        border-radius: 12px;
+        position: absolute;
+        bottom: -420%;
+        left: 20%;
+        
+    }
+
+    #img_special {
+
+        width: 100px;
+
+    }
+}
