@@ -9,6 +9,7 @@ let order_main_div = document.getElementById('second_main')
 let remove_text = document.getElementsByClassName('notification')[0]
 
 let count = 0
+let count_items = 0
 let order_confirm_btn = document.createElement('button')
 
 order_confirm_btn.style.width = '90%'
@@ -38,18 +39,7 @@ for (let i = 0; i < 10; i++) {
         let order_amount = document.createElement('span')
         let order_price = document.createElement('span')
         let order_price_times_amout = document.createElement('span')
-        // let order_confirm_btn = document.createElement('button')
 
-        // order_confirm_btn.style.width = '90%'
-        // order_confirm_btn.style.height = '60px'
-        // order_confirm_btn.style.backgroundColor = 'rgb(187, 52, 3)'
-        // order_confirm_btn.innerHTML = 'Confirm Order'
-        // order_confirm_btn.style.color = 'white'
-        // order_confirm_btn.style.border = 'none'
-        // order_confirm_btn.style.borderRadius = '50px'
-        // order_confirm_btn.style.fontWeight = '500'
-        // order_confirm_btn.style.fontSize = '16px'
-        // order_confirm_btn.style.marginLeft = '25px'
 
 
         order_div.style.height = '70px'
@@ -102,7 +92,7 @@ for (let i = 0; i < 10; i++) {
         if (!order_confirm_btn.isConnected) {
             order_main_div.appendChild(order_confirm_btn)
         }
-
+        
 
     })
 
