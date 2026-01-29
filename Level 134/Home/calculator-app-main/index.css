@@ -109,6 +109,7 @@ main{
     color: hsl(223, 31%, 20%);
     font-size: 22px;
     font-weight: 700;
+    box-shadow: 0px 2px 3px grey;
 
 }
 #resete{
@@ -116,13 +117,25 @@ main{
     width: 180px;
     background-color: hsl(225, 21%, 49%);
     color: white;
+    box-shadow: 0px 2px 3px hsl(224, 24%, 38%);
+
 
 }   
 #equal{
 
     background-color: hsl(6, 63%, 50%);
     color: white;
-    width: 160px;
+    width: 160px;   
+    box-shadow: 0px 2px 3px hsl(6, 70%, 32%);
+
+
+}
+
+
+
+#delete{
+
+    box-shadow: 0px 2px 3px hsla(184, 65%, 17%, 0.76)
 
 }
 .key_div {
