@@ -31,97 +31,172 @@ let input_num = document.getElementById('input_span')
 let key_pad = document.getElementById('main_key_pad')
 let input_screen = document.getElementById('input')
 
-let signs = ['+','-','/','*']
-let save = 0
+
+// let save = 0
 
 for (let i = 0; i <= 1; i += 3) {
 
     numbers_0.addEventListener('click', function () {
 
         input_num.innerText += '0'
+        operator = ' '
 
     })
 
     numbers_1.addEventListener('click', function () {
 
         input_num.innerText += '1'
+        operator = ' '
 
     })
 
     numbers_2.addEventListener('click', function () {
 
         input_num.innerText += '2'
+        operator = ' '
 
     })
 
     numbers_3.addEventListener('click', function () {
 
         input_num.innerText += '3'
+        operator = ' '
 
     })
 
     numbers_4.addEventListener('click', function () {
 
         input_num.innerText += '4'
+        operator = ' '
 
     })
 
     numbers_5.addEventListener('click', function () {
 
         input_num.innerText += '5'
+        operator = ' '
 
     })
 
     numbers_6.addEventListener('click', function () {
 
         input_num.innerText += '6'
+        operator = ' '
 
     })
 
     numbers_7.addEventListener('click', function () {
 
         input_num.innerText += '7'
+        operator = ' '
 
     })
 
     numbers_8.addEventListener('click', function () {
 
         input_num.innerText += '8'
+        operator = ' '
 
     })
 
     numbers_9.addEventListener('click', function () {
 
         input_num.innerText += '9'
-
+        operator = ' '
     })
 
 }
 
 
-plus_btn.addEventListener('click',function(){
-    
-    save += Number(input_num.innerText)
-    input_num.innerText += '+'
+let symblo = ''
+let operatig_number = 0
+
+
+plus_btn.addEventListener('click', function () {
+
+    operatig_number = Number(input_num.innerText)
+    symblo = '+'
+    input_num.innerText = '+'
 
 })
 
-minus_btn.addEventListener('click',function(){
-    
-    for (i in input_num.innerText){
+minus_btn.addEventListener('click', function () {
 
-        if (i == '=')
+    operatig_number = Number(input_num.innerText)
+    symblo = '-'
+    input_num.innerText = '-'
+
+})
+divide_btn.addEventListener('click', function () {
+
+    operatig_number = Number(input_num.innerText)
+    symblo = '/'
+    input_num.innerText = '/'
+
+})
+multi_btn.addEventListener('click', function () {
+
+    operatig_number = Number(input_num.innerText)
+    symblo = 'x'
+    input_num.innerText = '*'
+
+})
+resete_btn.addEventListener('click', function () {
+
+    operatig_number = 0
+    input_num.innerText = ''
+
+})
+delete_btn.addEventListener('click', function () {
+
+    input_num.innerText = input_num.innerText.slice(0, -1)
+
+})
+let dot_count = 0
+dot_btn.addEventListener('click', function (event) {
+
+    if (!input_num.innerText.includes('.')) {
+        input_num.innerText += '.'
+    } else {
+
+        event.stopPropagation()
+    }
+})
+
+equal_btn.addEventListener('click', function () {
+
+    let new_opereting_num = Number(input_num.innerText.slice(1,input_num.innerText.length))
+    
+    if (symblo === '+') {
+
+        input_num.innerText = operatig_number + new_opereting_num
 
     }
-    input_num.innerText += '-'
+    else if (symblo === '-') {
 
+        input_num.innerText = operatig_number - new_opereting_num
+
+    }
+    else if (symblo === 'x') {
+
+        input_num.innerText = operatig_number * new_opereting_num
+
+    }
+    else if (symblo === '/') {
+
+        input_num.innerText = operatig_number / new_opereting_num
+
+    }
+    else if (symblo === ' '){
+
+        input_num.innerText
+
+    }
 })
 
-equal_btn.addEventListener('click', function(){
 
-    console.log(save)
 
-})
+
 
 let switcher = document.getElementById('mini_ball')
 let switcher_bg = document.getElementById('btn')

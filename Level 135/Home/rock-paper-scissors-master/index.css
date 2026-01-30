@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 48%, 15%));
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+
+}
+
+#title {
+
+    width: 900px;
+    height: 190px;
+    border-radius: 10px;
+    border: 3px solid hsl(246, 9%, 43%);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 60px;
+    align-items: center;
+    
+}
+
+#three {
+
+    color: white;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+.names_1{
+
+    font-size: 45px;
+    position: absolute;
+    top: 11%;
+
+}
+.names_2{
+
+    font-size: 45px;
+    position: absolute;
+    top: 16%;
+
+}
+.names_3{
+
+    font-size: 45px;
+    position: absolute;
+    top: 21%;
+
+}
+#score{
+
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+#score_span{
+
+    color: hsl(229, 64%, 46%);
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 24px;
+
+}
+
+#score_num{
+
+    color: hsl(229, 25%, 31%);
+    font-size: 75px;
+    font-weight: 600;
+
+}
+
+.ch{
+
+    width: 180px;
+
+}
+
+#ro{
+
+    position: absolute;
+    left: 45%;
+    top: 78%;
+
+}
+
+#pa{
+
+    position: absolute;
+    left: 34%;
+    top: 50%;
+
+}
+
+#sci{
+
+    position: absolute;
+    left: 56%;
+    top: 51%;
+
+}
+
+#stick_1{
+
+    width: 300px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.322);
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}   
+
+#stick_2{
+
+    width: 300px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.322);
+    position: absolute;
+    top: 75%;
+    left: 36%;
+    transform: rotate(55deg);
+
+}   
+
+#stick_3{
+
+    width: 300px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.322);
+    position: absolute;
+    top: 75%;
+    left: 47%;
+    transform: rotate(125deg);
+    
+}   
+
+#rules_btn{
+
+    height: 40px;
+    width: 130px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    
+}
