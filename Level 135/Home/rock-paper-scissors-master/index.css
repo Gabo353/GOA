@@ -23,7 +23,7 @@ body {
     margin: auto;
     margin-top: 60px;
     align-items: center;
-    
+
 }
 
 #three {
@@ -36,28 +36,31 @@ body {
 
 }
 
-.names_1{
+.names_1 {
 
     font-size: 45px;
     position: absolute;
     top: 11%;
 
 }
-.names_2{
+
+.names_2 {
 
     font-size: 45px;
     position: absolute;
     top: 16%;
 
 }
-.names_3{
+
+.names_3 {
 
     font-size: 45px;
     position: absolute;
     top: 21%;
 
 }
-#score{
+
+#score {
 
     height: 150px;
     width: 200px;
@@ -68,10 +71,11 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 
 }
-#score_span{
+
+#score_span {
 
     color: hsl(229, 64%, 46%);
     font-weight: 600;
@@ -80,7 +84,7 @@ body {
 
 }
 
-#score_num{
+#score_num {
 
     color: hsl(229, 25%, 31%);
     font-size: 75px;
@@ -88,13 +92,13 @@ body {
 
 }
 
-.ch{
+.ch {
 
     width: 180px;
 
 }
 
-#ro{
+#choose_rock {
 
     position: absolute;
     left: 45%;
@@ -102,7 +106,7 @@ body {
 
 }
 
-#pa{
+#choose_paper {
 
     position: absolute;
     left: 34%;
@@ -110,7 +114,7 @@ body {
 
 }
 
-#sci{
+#choose_sci {
 
     position: absolute;
     left: 56%;
@@ -118,7 +122,7 @@ body {
 
 }
 
-#stick_1{
+#stick_1 {
 
     width: 300px;
     height: 15px;
@@ -126,9 +130,54 @@ body {
     position: absolute;
     top: 60%;
     left: 40%;
-}   
+    z-index: -1;
+}
 
-#stick_2{
+#noty {
+
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    position: absolute;
+    left: 46%;
+    top: 50%;
+
+}
+
+#me {
+
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 43%;
+    left: 36.5%;
+}
+
+#comp {
+
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 43%;
+    left: 56%;
+}
+
+#again{
+
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    left: 46%;
+    top: 60%;
+
+}
+
+#stick_2 {
 
     width: 300px;
     height: 15px;
@@ -137,10 +186,10 @@ body {
     top: 75%;
     left: 36%;
     transform: rotate(55deg);
+    z-index: -1;
+}
 
-}   
-
-#stick_3{
+#stick_3 {
 
     width: 300px;
     height: 15px;
@@ -149,10 +198,10 @@ body {
     top: 75%;
     left: 47%;
     transform: rotate(125deg);
-    
-}   
+    z-index: -1;
+}
 
-#rules_btn{
+#rules_btn {
 
     height: 40px;
     width: 130px;
@@ -163,5 +212,5 @@ body {
     position: absolute;
     top: 100%;
     left: 90%;
-    
+
 }
