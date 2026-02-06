@@ -9,6 +9,7 @@ rules_btn.addEventListener('click', function () {
     let span = document.createElement('span')
     let img = document.createElement('img')
 
+    div.id = 'rules_div'
     div.style.height = '450px'
     div.style.width = '450px'
     div.style.backgroundColor = 'white'

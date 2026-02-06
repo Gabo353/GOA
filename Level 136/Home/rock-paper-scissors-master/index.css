@@ -164,7 +164,7 @@ body {
     left: 56%;
 }
 
-#again{
+#again {
 
     height: 40px;
     width: 150px;
@@ -213,4 +213,162 @@ body {
     top: 100%;
     left: 90%;
 
+}
+
+@media (max-width: 376px) {
+
+    #title {
+
+        width: 340px;
+        height: 150px;
+
+    }
+
+    .names_1 {
+
+        font-size: 30px;
+        position: absolute;
+        top: 12%;
+    }
+
+    .names_2 {
+
+        font-size: 30px;
+        position: absolute;
+        top: 15%;
+        color: white;
+
+    }
+
+    .names_3 {
+
+        font-size: 30px;
+        position: absolute;
+        top: 18%;
+        color: white;
+
+    }
+
+    #score {
+
+        height: 120px;
+        width: 130px;
+
+    }
+
+    #score_num {
+
+        font-size: 55px;
+
+    }
+
+    #choose_sci {
+
+        width: 150px;
+        position: absolute;
+        top: 35%;
+    }
+
+    #choose_paper {
+
+        width: 140px;
+        position: absolute;
+        left: 5%;
+        top: 35%;
+    }
+
+    #choose_rock {
+
+        width: 140px;
+        position: absolute;
+        left: 32%;
+        top: 63%;
+    }
+
+    #stick_1 {
+
+        width: 150px;
+        height: 15px;
+        background-color: rgba(0, 0, 0, 0.322);
+        position: absolute;
+        top: 43%;
+        left: 40%;
+        z-index: -1;
+
+    }
+
+    #stick_2 {
+
+        width: 250px;
+        height: 15px;
+        background-color: rgba(0, 0, 0, 0.322);
+        position: absolute;
+        top: 60%;
+        left: 6%;
+        transform: rotate(65deg);
+        z-index: -1;
+    }
+
+    #stick_3 {
+
+        width: 250px;
+        height: 15px;
+        background-color: rgba(0, 0, 0, 0.322);
+        position: absolute;
+        top: 60%;
+        left: 27%;
+        transform: rotate(115deg);
+        z-index: -1;
+    }
+
+    #rules_btn {
+
+        height: 40px;
+        width: 130px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid white;
+        color: white;
+        border-radius: 8px;
+        position: absolute;
+        top: 95%;
+        left: 33.8%;
+
+    }
+
+    #again {
+
+        position: absolute;
+        left: 18%;
+        top: 80%;
+        height: 65px;
+        width: 250px;
+        font-weight: 500;
+        font-size: 18px;
+
+    }
+
+    #noty {
+
+        position: absolute;
+        left: 27.5%;
+        top: 70%;
+        font-size: 55px;
+
+    }
+
+    #me{
+
+        position: absolute;
+        left: 8%;
+        top: 52%;
+
+    }
+
+    #comp{
+
+        position: absolute;
+        top: 52%;
+        text-align: center;
+
+    }
 }
