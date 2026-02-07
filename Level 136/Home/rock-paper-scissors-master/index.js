@@ -1,7 +1,5 @@
 let body = document.body
-
 let rules_btn = document.getElementById('rules_btn')
-
 rules_btn.addEventListener('click', function () {
 
     let div = document.createElement('div')
@@ -34,7 +32,7 @@ rules_btn.addEventListener('click', function () {
     span.style.left = '7%'
     span.style.top = '6%'
 
-    img.src = './image-rules.svg'
+    img.src = 'image-rules.svg'
     img.style.width = "50px"
     img.style.position = "absolute"
     img.style.top = "50%"
@@ -49,13 +47,9 @@ rules_btn.addEventListener('click', function () {
         div.remove()
 
     })
-    console.log(img)
 })
 
 //------------------------------Game-------------------------------------
-
-
-
 let computer_move = Math.floor(Math.random() * 3)
 let paper = document.getElementById('choose_paper')
 let rock = document.getElementById('choose_rock')
@@ -68,21 +62,20 @@ let rock_src = rock.src
 let paper_src = paper.src
 let scisors_src = scisors.src
 
-
 let notification = document.getElementById('noty')
 let score = document.getElementById('score_num')
 let score_num = 0
 let me = document.getElementById('me')
 let comp = document.getElementById('comp')
 
-let computer_choice = [rock, paper, scisors]
 let computer_choice_str = ["rock", "paper", "scisors"]
+let all_btn = [rock, paper, scisors]
 
 let my_bid = ''
 let computer_bid = computer_choice_str[computer_move]
 
-function reset_game_ui() {
-    
+function reset() {
+
     body.appendChild(rock)
     body.appendChild(paper)
     body.appendChild(scisors)
@@ -90,24 +83,22 @@ function reset_game_ui() {
     body.appendChild(stick_2)
     body.appendChild(stick_3)
 
-    
     me.innerText = ''
     comp.innerText = ''
     notification.innerText = ''
 
-    
     let old_btn = document.getElementById('again')
-    if (old_btn) old_btn.remove()
 
-    
+    if (old_btn !== null) {
+        old_btn.remove()
+    }
+
     rock.src = rock_src
     paper.src = paper_src
     scisors.src = scisors_src
 }
 
-
 function game_simulation() {
-    
 
     if (my_bid == computer_bid) { notification.innerHTML = 'draw' }
     else if (my_bid == 'paper' && computer_bid == 'scisors') { notification.innerText = 'You lose' }
@@ -127,16 +118,13 @@ paper.addEventListener('click', function () {
     me.innerText = 'Your Pick:'
     comp.innerText = 'Computers Pick:'
 
-    
-    if (my_bid === 'paper'){
+    if (my_bid === 'paper') {
         paper.src = paper_src
     }
 
-    
     computer_move = Math.floor(Math.random() * 3)
     computer_bid = computer_choice_str[computer_move]
 
-    
     if (computer_bid === 'rock') {
         scisors.src = rock_src
     } else if (computer_bid === 'paper') {
@@ -145,16 +133,13 @@ paper.addEventListener('click', function () {
         scisors.src = scisors_src
     }
 
-    
     rock.remove()
     stick_1.remove()
     stick_2.remove()
     stick_3.remove()
 
-    
     game_simulation()
 
-    
     let play_btn = document.createElement('button')
     play_btn.id = 'again'
     play_btn.innerText = 'PLAY AGAIN'
@@ -166,9 +151,8 @@ paper.addEventListener('click', function () {
         play_btn.style.color = 'green'
     }
 
-    
-    play_btn.addEventListener('click', function() {
-        reset_game_ui()
+    play_btn.addEventListener('click', function () {
+        reset()
     })
 
     document.body.appendChild(play_btn)
@@ -180,14 +164,12 @@ rock.addEventListener('click', function () {
     me.innerText = 'Your Pick:'
     comp.innerText = 'Computers Pick:'
 
-    if (my_bid === 'rock'){
+    if (my_bid === 'rock') {
         paper.src = rock_src
     }
 
-
     computer_move = Math.floor(Math.random() * 3)
     computer_bid = computer_choice_str[computer_move]
-
 
     if (computer_bid === 'rock') {
         scisors.src = rock_src
@@ -197,16 +179,12 @@ rock.addEventListener('click', function () {
         scisors.src = scisors_src
     }
 
-
-
     rock.remove()
     stick_1.remove()
     stick_2.remove()
     stick_3.remove()
 
-
     game_simulation()
-
 
     let play_btn = document.createElement('button')
     play_btn.id = 'again'
@@ -218,9 +196,9 @@ rock.addEventListener('click', function () {
         play_btn.style.color = 'green'
     }
 
-    play_btn.addEventListener('click', function(){
+    play_btn.addEventListener('click', function () {
 
-        reset_game_ui()
+        reset()
 
     })
 
@@ -234,14 +212,12 @@ scisors.addEventListener('click', function () {
     me.innerText = 'Your Pick:'
     comp.innerText = 'Computers Pick:'
 
-
-    if (my_bid === 'scisors'){
+    if (my_bid === 'scisors') {
         paper.src = scisors_src
     }
 
     computer_move = Math.floor(Math.random() * 3)
     computer_bid = computer_choice_str[computer_move]
-
 
     if (computer_bid === 'rock') {
         scisors.src = rock_src
@@ -251,16 +227,12 @@ scisors.addEventListener('click', function () {
         scisors.src = scisors_src
     }
 
-
-
     rock.remove()
     stick_1.remove()
     stick_2.remove()
     stick_3.remove()
 
-
     game_simulation()
-
 
     let play_btn = document.createElement('button')
     play_btn.id = 'again'
@@ -272,13 +244,11 @@ scisors.addEventListener('click', function () {
         play_btn.style.color = 'green'
     }
 
-    play_btn.addEventListener('click', function(){
+    play_btn.addEventListener('click', function () {
 
-        reset_game_ui()
+        reset()
 
     })
 
     document.body.appendChild(play_btn)
-
 })
-
