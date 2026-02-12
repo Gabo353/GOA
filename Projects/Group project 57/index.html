@@ -11,26 +11,23 @@
 <body>
 
     <header>
-
         <div id="section">
 
-            <img src="./images/menu_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png" alt="section">
+            <img src="./images/menu_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.png" alt="section" id="bur">
 
         </div>
 
         <div id="logo">
 
-            <span id="logo">Logo</span>
-            <img src="" alt="">
+            <span id="logo">Game</span>
+            <img src="./icons/stadia_controller_50dp_WHITE_FILL0_wght400_GRAD0_opsz48.png" alt="logo" id="logo_cont">
 
         </div>
 
-        <div>
-            <button id="home_btn">Home</button>
+        <div id="a_s">
+            <a id="home_btn" href="./index.html">Home</a>
 
-            <button id="Sign_btn">Sign in</button>
-
-            <button id="About">Help</button>
+            <a id="Sign_btn">Sign in</a>
 
         </div>
 
@@ -49,14 +46,19 @@
 
         </div>
 
-    </main> 
+    </main>
 
-    <footer>
-
-        
-
-    </footer>
-
+    <div id="signModal" class="modal">
+        <div class="modal-content">
+            <h2>Sign In</h2>
+            <img src="./icons/game-controller.png" alt="controller" id="cont">
+            <input type="text" placeholder="Username" id="name"/>
+            <input type="password" placeholder="Password" id="pass"/>
+            <input type="age" placeholder="age" id="pass"/>
+            <button id="loginBtn">Login</button>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 

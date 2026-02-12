@@ -42,7 +42,8 @@ header {
     border: none;
     color: white;
     font-size: 17px;
-
+    font-weight: 700;
+    text-decoration: none;
 }
 
 #Sign_btn {
@@ -52,7 +53,7 @@ header {
     border: none;
     color: white;
     font-size: 17px;
-
+    font-weight: 700;
 }
 
 #About {
