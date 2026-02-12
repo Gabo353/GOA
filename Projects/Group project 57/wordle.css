@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+
+header {
+
+    background-color: rgb(187, 2, 138);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#Logo {
+
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+    position: relative;
+    margin-left: 65px;  
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}   
+
+#home_btn {
+
+    background-color: rgb(187, 2, 138);
+    font-weight: 100;
+    border: none;
+    color: white;
+    font-size: 17px;
+
+}
+
+#Sign_btn {
+
+    background-color: rgb(187, 2, 138);
+    font-weight: 100;
+    border: none;
+    color: white;
+    font-size: 17px;
+
+}
+
+#About {
+
+    background-color: rgb(187, 2, 138);
+    font-weight: 100;
+    border: none;
+    color: white;
+    font-size: 17px;
+
+}
+
+.discription {
+
+    font-size: 32px;
+    margin: auto;
+
+}
+
+#icon_wordle{
+
+    width: 35px;
+    border-radius: 5px;
+
+}
+
+#brackets_div {
+
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: repeat(1fr, 5);
+    gap: 8px;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+
+}
+
+.brackets {
+
+    height: 400px;
+    height: 80px;
+    display: flex;
+    gap: 7px;
+
+}
+
+.bracket_txt {
+
+    height: 80px;
+    width: 80px;
+    background-color: rgba(173, 216, 230, 0.129);
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+#Key_pad{
+
+    height: 100px;
+    position: absolute;
+    top: 110%;
+    left: 28%;
+    text-align: center;
+    display: flex;  
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+
+.key{
+
+    height: 60px;
+    width: 70px;
+    background-color: rgba(0, 0, 255, 0.217);
+    border: none;
+    border-radius: 8px;
+    color: rgb(55, 54, 54);
+    font-size: 20px;
+    font-weight: 700;
+
+}           
+
+.key_line_width{
+
+    width: 70px;
+
+}
+
+.key_line_width_2{
+
+    width: 78.2px;
+
+}
+
+.key_line_width_max{
+
+    width: 107px;
+
+}
+
+.key:hover{
+
+    background-color: rgba(0, 0, 255, 0.344);
+    cursor: pointer;
+
+}   

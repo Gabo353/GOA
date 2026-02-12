@@ -26,6 +26,8 @@ header{
     color: white;
     font-weight: 500;
     font-size: 35px;
+    position: absolute;
+    
 
 }
 
@@ -124,10 +126,10 @@ main{
 
 .design_img{
 
-    width: 600px;
+    width: 601px;
     position: absolute;
     z-index: -1;
-    left: 55.3%;
+    left: 64.8%;
 
 }
 
