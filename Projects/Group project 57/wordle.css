@@ -66,6 +66,25 @@ header {
 
 }
 
+#la{
+
+    font-size: 28px;
+    position: absolute;
+    top: 96%;
+    left: 44%;
+
+}
+
+#known{
+
+    font-size: 45px;
+    position: absolute;
+    top: 100%;
+    left: 46%;
+    color: lightgreen;
+
+}
+
 .discription {
 
     font-size: 32px;
