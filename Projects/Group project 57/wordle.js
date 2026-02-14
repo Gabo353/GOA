@@ -85,10 +85,10 @@ keys[27].addEventListener('click', function () {
 
 keys[19].addEventListener('click', function(){
 
-    for (let i = 0; i < keys.length; i++){
+    for (let i = keys.length; i <= 0; i--){
 
         brackets[current_row].innerHTML = ''
-
+        
     }
-    current_row++
+    
 })
