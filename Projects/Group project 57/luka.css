@@ -2,7 +2,7 @@ body {
     background: #e0d4b7;
     color: #222;
     text-align: center;
-    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    font-family: 'Indie Flower', 'Comic Sans MS', cursive;
     font-size: 0.9em;
 }
 
@@ -18,17 +18,31 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     overflow: hidden;
-    background: url('./img/tic-tac-toe.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('./images/tic-tac-toe-seamless-background-on-dark-blue-illustration-vector.jpg') no-repeat center center / cover;
 }
 
-#restartIcon {
-    width: 25px;
-    height: 25px;
+.td_game {
+    border: 2px solid #6d4c41;
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    background: rgba(255, 250, 240, 0.8);
 }
 
 .fixed {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    display: block;
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: bold;
+    transition: transform 0.2s;
     animation: pop 0.2s ease;
+}
+
+.fixed:hover {
+    transform: scale(1.1);
 }
 
 @keyframes pop {
@@ -41,33 +55,6 @@ h1 {
     }
 }
 
-
-.td_game {
-    border: 2px solid #6d4c41;
-    width: 120px;
-    height: 120px;
-    padding: 0;
-    vertical-align: middle;
-    text-align: center;
-    background: rgba(255, 250, 240, 0.8);
-}
-
-.fixed {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-    font-size: 3em;
-    font-weight: bold;
-    transition: transform 0.2s;
-}
-
-.fixed:hover {
-    transform: scale(1.1);
-}
-
 .x {
     color: #c62828;
     text-shadow: 2px 2px 4px #8b0000;
@@ -78,14 +65,10 @@ h1 {
     text-shadow: 2px 2px 4px #0d47a1;
 }
 
-td.td_list,
-th.th_list {
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 5px 15px;
-    color: #3e2723;
+.win-color {
+    background-color: #ffeb3b;
+    transition: background-color 0.5s;
 }
-
 
 #restart {
     font-size: 2em;
@@ -93,12 +76,18 @@ th.th_list {
     margin: 20px auto;
 }
 
+#restartIcon {
+    width: 25px;
+    height: 25px;
+}
+
 #audioControls {
     margin: 10px auto;
     text-align: center;
 }
 
-#audioControls button {
+#audioControls button,
+button {
     background-color: #6d4c41;
     color: #fff;
     border: none;
@@ -109,18 +98,24 @@ th.th_list {
     transition: background 0.3s;
 }
 
-#audioControls button:hover {
+#audioControls button:hover,
+button:hover {
     background-color: #8d6e63;
+}
+
+td.td_list,
+th.th_list {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: #3e2723;
 }
 
 .modal {
     display: none;
     position: fixed;
+    inset: 0;
     z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -136,6 +131,7 @@ th.th_list {
     width: 350px;
     max-width: 80%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 .close {
@@ -143,35 +139,15 @@ th.th_list {
     font-size: 28px;
     font-weight: bold;
     float: right;
+    cursor: pointer;
 }
 
 .close:hover {
     color: #c62828;
-    cursor: pointer;
-}
-
-.win-color {
-    background-color: #ffeb3b;
-    transition: background-color 0.5s;
 }
 
 input[type="radio"] {
     accent-color: #3e2723;
     margin: 0 5px;
     cursor: pointer;
-}
-
-button {
-    background-color: #6d4c41;
-    color: #fff;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 8px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #8d6e63;
 }

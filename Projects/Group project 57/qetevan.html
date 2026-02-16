@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>minigame</title>
     <link rel="stylesheet" href="./qetevan.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome Back!</h1>
-    </header>
 
-    <div class="container">
-        <form class="login-form">
-            <h3>Log into your account</h3>
-            <input type="email" placeholder="Enter your email" required>
-            <input type="password" placeholder="Enter your password" required>
-            <button type="submit">Log In</button>
-        </form>
-    </div>
-    <script src="./qetevan.js"></script>
+<h1 id="title">
+    <span class="title-green">C</span>
+    <span class="title-red">l</span>
+    <span class="title-blue">i</span>
+    <span class="title-orange">c</span>
+    <span class="title-green">k</span>
+    <span class="title-red">B</span>
+    <span class="title-blue">o</span>
+    <span class="title-orange">x</span>
+</h1>
+
+</h1>
+
+
+<div id="stats">
+    Score: <span id="score">0</span> |
+    Lives: <span id="lives">3</span> |
+    Level: <span id="level">1</span> |
+    High Score: <span id="highscore">0</span>
+</div>
+
+<button onclick="startgame()">Start Game</button>
+
+<div id="gamearea"></div>
+
+<script src="./qetevan.js"></script>
+
 </body>
 </html>

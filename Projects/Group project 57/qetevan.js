@@ -2,8 +2,8 @@ let score = 0
 let lives = 3
 let level = 1
 let speed = 1200
-let gameinterval
 let highscore = 0
+let gameinterval
 
 document.getElementById("highscore").textContent = highscore
 
@@ -31,11 +31,11 @@ function createbox(type){
 
 function movebox(box){
     const area = document.getElementById("gamearea")
-    const maxx = area.clientWidth - 50
-    const maxy = area.clientHeight - 50
+    const x= area.clientWidth - 50
+    const y = area.clientHeight - 50
 
-    box.style.left = Math.random() * maxx + "px"
-    box.style.top = Math.random() * maxy + "px"
+    box.style.left = Math.random() * x + "px"
+    box.style.top = Math.random() * y + "px"
 }
 
 function spawnboxes(){

@@ -47,6 +47,7 @@ burger.addEventListener('click', function () {
     let button = document.createElement('button')
     let img_wordle = document.createElement('img')
     let img_tic = document.createElement('img')
+    let img_speed = document.createElement('img')
 
     img_wordle.src = "./icons/wordle_icon.png"
     img_wordle.style.width = "50px"
@@ -62,14 +63,21 @@ burger.addEventListener('click', function () {
     img_tic.style.marginLeft = "240px"
     img_tic.style.marginTop = "350px"
 
+    img_speed.src = "./images/download (3).png"
+    img_speed.style.width = "50px"
+    img_speed.style.borderRadius = "5px"
+    img_speed.style.position = "absolute"
+    img_speed.style.marginLeft = "240px"
+    img_speed.style.marginTop = "565px"
+
     div.style.backgroundColor = 'rgb(187, 2, 138)'
     div.style.height = '810px'
     div.style.width = '350px'
     div.style.position = 'fixed'
     div.style.top = '0'
     div.style.left = '0'
-    div.style.transform = 'translateX(-100%)'   // START OFF SCREEN
-    div.style.transition = 'transform 0.4s ease-in-out'  // ANIMATION
+    div.style.transform = 'translateX(-100%)'   
+    div.style.transition = 'transform 0.4s ease-in-out'  
     div.style.boxShadow = '2px 1px 6px 1px black'
     div.style.display = 'flex'
     div.style.flexDirection = 'column'
@@ -104,7 +112,7 @@ burger.addEventListener('click', function () {
     span_3.href = './luka.html'
     span_3.style.textDecoration = 'none'
 
-    span_4.innerText = 'qetevanis archevani'
+    span_4.innerText = 'Reaction Time'
 
     span_4.style.color = 'white'
     span_4.style.fontSize = '20px'
@@ -139,6 +147,7 @@ burger.addEventListener('click', function () {
     div.appendChild(span_2)
     div.appendChild(img_wordle)
     div.appendChild(img_tic)
+    div.appendChild(img_speed)
     div.appendChild(span_3)
     div.appendChild(span_4)
     div.appendChild(button)

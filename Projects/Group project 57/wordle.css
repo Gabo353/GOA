@@ -66,11 +66,17 @@ header {
 
 }
 
+#time{
+
+    margin-left: 205px;
+
+}
+
 #la{
 
     font-size: 28px;
     position: absolute;
-    top: 96%;
+    top: 98%;
     left: 44%;
 
 }
@@ -79,9 +85,10 @@ header {
 
     font-size: 45px;
     position: absolute;
-    top: 100%;
-    left: 46%;
-    color: lightgreen;
+    top: 101.5%;
+    left: 45.7%;
+    color: green;
+    font-weight: 500;
 
 }
 
