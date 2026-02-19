@@ -137,9 +137,14 @@ main {
 #product_3:hover,
 #product_4:hover {
 
-    border: 2px solid hsl(26, 100%, 55%);
     opacity: 0.6;
     cursor: pointer;
+
+}
+
+.selected {
+
+    border: 3px solid hsl(26, 100%, 55%);
 
 }
 
@@ -174,7 +179,7 @@ main {
 
 }
 
-#main_div_text{
+#main_div_text {
 
     margin-left: 250px;
     margin-top: 100px;
@@ -218,7 +223,7 @@ main {
 
 }
 
-#price_btns{
+#price_btns {
 
     display: flex;
     gap: 15px;
@@ -234,29 +239,29 @@ main {
     align-items: center;
     justify-content: space-around;
 
-}   
+}
 
-#minus{
+#minus {
 
     cursor: pointer;
     width: 15px;
 }
 
-#plus{
+#plus {
 
     cursor: pointer;
     width: 15px;
 }
 
 
-#amount{
+#amount {
 
     font-size: 18px;
     font-weight: 500;
 
 }
 
-#wanna_be_too{
+#wanna_be_too {
 
     background-color: hsl(26, 100%, 55%);
     display: flex;
@@ -267,20 +272,22 @@ main {
     gap: 10px;
 
 }
-#wanna_be_too:hover{
+
+#wanna_be_too:hover {
 
     opacity: 0.7;
     cursor: pointer;
-    
+
 }
-#cart_add_txt{
+
+#cart_add_txt {
 
     font-weight: 500;
 
 }
 
 
-#added{
+#added {
 
     width: 360px;
     height: 270px;
@@ -290,11 +297,11 @@ main {
     top: 15%;
     border-radius: 8px;
     z-index: 1;
-    
 
-}   
 
-#cart_top{
+}
+
+#cart_top {
 
     color: black;
     font-weight: 700;
@@ -303,7 +310,7 @@ main {
     top: 10%;
 }
 
-#empty{
+#empty {
 
     position: relative;
     top: 52%;
@@ -311,4 +318,62 @@ main {
     color: grey;
     font-weight: 700;
 
-}   
+}
+
+/* ----------JS/CSS----------- */
+
+.new_main {
+
+    width: 530px;
+    border-radius: 15px;
+    position: absolute;
+    top: 19%;
+    left: 35%;
+    z-index: 1;
+
+}
+
+.grey_bg {
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    top: 0%;
+
+}
+
+.right_btn {
+
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 46%;
+    left: 64.5%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left_btn {
+
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 46%;
+    left: 33.5%;
+    z-index: 2;
+    rotate: 180deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
