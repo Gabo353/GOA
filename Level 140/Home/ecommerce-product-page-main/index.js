@@ -1,30 +1,39 @@
 let cart_btn = document.getElementById('cart')
-let toRemove_Add_Cart = 1
+let toRemove_Add_Cart = 0
+
+//-----------------------------cart_btn-----------------------------------
+
+function created() {
+
+    let div = document.createElement('div')
+    let span = document.createElement('span')
+    let span_noty = document.createElement('span')
+
+    div.id = 'added'
+    span.id = 'cart_top'
+    span.innerHTML = 'Cart'
+    span_noty.id = 'empty'
+    span_noty.innerHTML = 'Your cart is empty.'
+
+    div.appendChild(span)
+    div.appendChild(span_noty)
+    document.body.appendChild(div)
+
+}
+
+
+
+let run = true
 
 cart_btn.addEventListener('click', function () {
-
-    if (toRemove_Add_Cart % 2 == 0) { return }
-
-    else {
-        let div = document.createElement('div')
-        let span = document.createElement('span')
-        let span_noty = document.createElement('span')
-
-        div.id = 'added'
-        span.id = 'cart_top'
-        span.innerHTML = 'Cart'
-        span_noty.id = 'empty'
-        span_noty.innerHTML = 'Your cart is empty.'
-
-
-        div.appendChild(span)
-        div.appendChild(span_noty)
-        document.body.appendChild(div)
-    }
-
-    toRemove_Add_Cart++
-
+    
+    if (run){ 
+        created() 
+        run = false
+    }    
+    
 })
+
 
 //-----------------------------plus_minus_btn-----------------------------------
 
@@ -38,10 +47,10 @@ plus.addEventListener('click', function () {
 })
 minus.addEventListener('click', function () {
     let num = Number(counter.innerHTML)
-    for (let i = 0; i <= 1; i++) {
+    for (let i = 0; i <= 0; i++) {
         if (num == 1) { return; }
         else {
-            counter.innerHTML = num += -1
+            counter.innerHTML = num -= 1
         }
     }
 })
@@ -74,15 +83,20 @@ for (let i = 0; i < images.length; i++) {
 
 main.addEventListener('click', function () {
 
+
     let img_add = document.createElement('img')
     let div_bg = document.createElement('div')
     let button_left = document.createElement('button')
     let button_right = document.createElement('button')
     let img_right = document.createElement('img')
     let img_left = document.createElement('img')
+    let img_remove = document.createElement('img')
+    let remove_btn = document.createElement('button')
+
 
     img_right.src = './images/icon-next.svg'
     img_left.src = './images/icon-next.svg'
+    img_remove.src = './images/close_40dp_WHITE_FILL0_wght400_GRAD0_opsz40.png'
 
     img_add.src = main.src
     img_add.className = 'new_main'
@@ -103,7 +117,7 @@ main.addEventListener('click', function () {
     let img_2_2 = document.createElement('img')
     let img_2_3 = document.createElement('img')
     let img_2_4 = document.createElement('img')
-    
+
     img_2_1.src = img_1.src
     img_2_2.src = img_2.src
     img_2_3.src = img_3.src
@@ -139,18 +153,56 @@ main.addEventListener('click', function () {
     img_2_4.style.bottom = '2%'
     img_2_4.style.borderRadius = '8px'
 
+    remove_btn.id = 'remove_btn'
+
+    remove_btn.appendChild(img_remove)
+
     document.body.appendChild(img_2_1)
     document.body.appendChild(img_2_2)
     document.body.appendChild(img_2_3)
     document.body.appendChild(img_2_4)
+    document.body.appendChild(remove_btn)
 
+    //---------------------buttons-----------------------------
+
+    remove_btn.addEventListener('click', function () {
+
+        div_bg.remove()
+        button_right.remove()
+        button_left.remove()
+        img_add.remove()
+        img_2_1.remove()
+        img_2_2.remove()
+        img_2_3.remove()
+        img_2_4.remove()
+
+    })
+
+    let list = [img_2_1, img_2_2, img_2_3, img_2_4]
+    let starter = 0
+    for (let i = 0; i < list.length; i++) {
+
+        list[i].addEventListener('click', function () {
+
+            img_add.src = list[i].src
+            starter = i
+
+        })
+
+
+    }
     button_left.addEventListener('click', function () {
-
-
+        starter--
+        if (starter < 0) {
+            starter = list.length - 1
+        }
+        img_add.src = list[starter].src
     })
     button_right.addEventListener('click', function () {
-
-
+        starter++
+        if (starter >= list.length) {
+            starter = 0
+        }
+        img_add.src = list[starter].src
     })
 })
-

@@ -1,31 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 body{
 
-    background-color: hsl(226, 43%, 10%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100%;
-}
-.d1{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik';
 
+}
+
+#div_1{
+
+    width: 250px;
+    height: 400px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 13px;
+    padding-left: 25px;
+    padding-top: 20px;
+
+}
+
+#face{
+
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+}
+
+.rpr{
+
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+
+}
+
+.rpr_name{
+
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+
+}
+
+#info{
+
+    height: 150px;
+    width: 240px;
     background-color: hsl(235, 46%, 20%);
-    height: 350px;
-    width: 200px;
-    border-radius: 5px;
-}
-.d-main{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    border-radius: 12px;
+    z-index: -1;
+    padding-top: 50px;
+    padding-left: 30px;
 
-    width: 500px;
-    height: 500px;
-    display: grid;
-    
 }
-.d2{
 
-    background-color: hsl(235, 46%, 20%);
-    height: 175px;
-    width: 200px;
-    border-radius: 5px;
+#inf_1{
+
+    color: white;
+    cursor: pointer;
+
+}
+#inf_1:hover{
+
+    color: white;
+
+}
+#inf_2{
+
+    color: white;
+    cursor: pointer;
+
+}
+#inf_2:hover{
+
+    color: white;
+
+}
+#inf_3{
+
+    color: white;
+    cursor: pointer;
+
+}
+#inf_3:hover{
+
+    color: white;
 
 }

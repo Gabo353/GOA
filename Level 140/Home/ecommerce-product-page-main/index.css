@@ -110,6 +110,7 @@ main {
 
     width: 410px;
     border-radius: 16px;
+    cursor: pointer;
 
 }
 
@@ -280,6 +281,8 @@ main {
 
 }
 
+/* ----------JS/CSS----------- */
+
 #cart_add_txt {
 
     font-weight: 500;
@@ -296,8 +299,8 @@ main {
     left: 70%;
     top: 15%;
     border-radius: 8px;
-    z-index: 1;
-
+    z-index: 3;
+    background-color: white;
 
 }
 
@@ -320,7 +323,7 @@ main {
 
 }
 
-/* ----------JS/CSS----------- */
+
 
 .new_main {
 
@@ -377,3 +380,15 @@ main {
     align-items: center;
 
 }
+
+#remove_btn{
+
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
+    position: absolute;
+    left: 68%;
+    bottom: 82%;
+    border: none;
+    cursor: pointer;
+
+}   

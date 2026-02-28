@@ -119,6 +119,8 @@ keys[19].addEventListener('click', function () {
     brackets[current_row * 5 + lastIndex].innerHTML = ''
 })
 
+
+
 let burger = document.getElementById('section')
 
 burger.addEventListener('click', function () {
