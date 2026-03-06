@@ -33,7 +33,6 @@ let user = {
 
     user_name : 'Gabo',
     user_email : 'example@gmail.com',
-    
 
 }
 
@@ -57,8 +56,8 @@ let person = {
 
 }
 
-let {name_person, username_person, address_person} = person
-let {city, country} = address_person
+let {name_person, username_person, address_person : {city, country}} = person
+
 
 //-----------------------------5--------------------------
 // შექმენით პროდუქტის ობიექტი, რომელსაც აქვს დასახელება, ფასი და ვალუტა.
