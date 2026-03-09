@@ -6,21 +6,6 @@
 
 //--------------------------1-------------------------
 
-// მოცემულია ობიექტი:
-// const company = {
-//   name: "TechCorp",
-//   location: {
-//     country: "Georgia",
-//     city: {
-//       name: "Tbilisi",
-//       street: "Rustaveli"
-//     }
-//   },
-//   employees: [
-//     { name: "Nika", age: 22 },
-//     { name: "Giorgi", age: 25 }
-//   ]
-// }
 // დესტრუქციის გამოყენებით ერთ ლაინში გამოიტანე კონსოლში:
 // company name
 // country
@@ -138,7 +123,7 @@ function HomeWork3() {
     console.log(name2, price2)
 
 }
-
+HomeWork3()
 
 //--------------------------4-------------------------
 
