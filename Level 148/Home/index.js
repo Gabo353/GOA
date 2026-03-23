@@ -29,9 +29,6 @@ function ClassWork2() {
     ]
 
     let newArr = posts.filter(each => each.likes > 100)
-    let [one, two] = newArr
-    console.log(one)
-    console.log(two)
     console.log(newArr)
 
 }
@@ -95,7 +92,7 @@ function ClassWork5() {
         { name: "ნინო", age: 35, department: "IT", salary: 2000 }
     ]
 
-    let newArr = employees.filter(each => each.department === 'IT' && each.salary < 1500).map(per => per.name)
+    let newArr = employees.filter(each => each.department === 'IT' && each.salary < 1500 && each.age < 30).map(per => per.name)
     console.log(newArr)
 }
 
