@@ -1,32 +1,8 @@
-// 4)შექმენი კლასი Product, რომელსაც ექნება:
-// name, price, quantity
-// მეთოდი getTotalPrice() → აბრუნებს მთლიან ფასს(ფასი გამრავლებული ოდენობაზე)
-// 5)შექმენი კლასი BankAccount, რომელსაც ექნება:
-
-// owner, balance
-// მეთოდი deposit(amount) --> შეგვაქვს თანხა ანგარიშზე და ბეჭდავს განახლებულ ბალანსს
-// მეთოდი withdraw(amount) --> გაგვაქვს თანხა ანგარიშიდან და ბეჭდავს დარჩენილ თანხას ანგარიშზე
-
-// დააკონსოლლოგეთ ბოლოს მთლიანი ობიექტი რომ ნახოთ შეცვლილი ობიექტი
-
-// 6)შექმენი კლასი Library, რომელსაც ექნება:
-
-// books (მასივი)
-
-// მეთოდები:
-
-// addBook(book) ამატებს არგუმენტად გადაცემულ წიგნს სიის ბოლოში
-// bookList() --- ბეჭდავს სიას იმის შემდეგ რაც წიგნი დაემატა
-
 // 7)შექმენი კლასი Password
-
 // ქონდეს მნიშვნელობა --> value
-
-
 // მეთოდები:
 // changePassword(newPass)
 // checkPassword() --> გამოაქვს შეცვლილი პაროლი
-
 
 
 //----------------1----------------
@@ -153,4 +129,116 @@ function ClassWork4() {
     let product_info = new Product('banana', 30, 2.99)
     product_info.getTotalPrice()
 } 
-ClassWork4()
+
+
+
+//----------------5--------------
+// შექმენი კლასი BankAccount, რომელსაც ექნება:
+// owner, balance
+// მეთოდი deposit(amount) --> შეგვაქვს თანხა ანგარიშზე და ბეჭდავს განახლებულ ბალანსს
+// მეთოდი withdraw(amount) --> გაგვაქვს თანხა ანგარიშიდან და ბეჭდავს დარჩენილ თანხას ანგარიშზე
+// დააკონსოლლოგეთ ბოლოს მთლიანი ობიექტი რომ ნახოთ შეცვლილი ობიექტი
+
+function ClassWork5() {
+
+    class BankAccount {
+
+        constructor(owner, balance){
+            this.owner = owner
+            this.balance = balance
+        }
+
+        ask(){
+            let option = Number(prompt('1.To deposit/ 2.To withdraw: ')) 
+            return option
+        }
+
+        deposit(amount){
+            amount = Number(prompt('To add: '))
+            console.log(`You deposited: ${amount} `)
+            console.log(`Your balance is ${this.balance + amount}`)
+        }
+
+        withdraw(amount){
+            amount = Number(prompt('To withdraw: '))
+            console.log(`You withdrawed: ${amount}: `)
+            console.log(`Your balance is ${this.balance - amount}`)
+        }
+
+    }
+    let bank_app = new BankAccount('Gabo', 50)
+    let choice = bank_app.ask()
+    if (choice == 1){
+        bank_app.deposit()
+    }
+    else if (choice == 2){
+        bank_app.withdraw()
+    }
+    else{
+        alert('Incorrect input')
+    }
+} 
+
+
+//----------------6--------------
+// შექმენი კლასი Library, რომელსაც ექნება:
+// books (მასივი)
+// მეთოდები:
+// addBook(book) ამატებს არგუმენტად გადაცემულ წიგნს სიის ბოლოში
+// bookList() --- ბეჭდავს სიას იმის შემდეგ რაც წიგნი დაემატა
+function ClassWork6() {
+
+    class Library{
+
+        constructor(books){
+            this.books = books
+        }
+
+
+        check(){
+            console.log(this.books)
+        }
+        addBook(book){
+            book = prompt('Add a book: ')
+            let list = this.books
+            list.push(book)
+        }
+        bookList(){
+            console.log(this.books)
+        }
+        
+    }
+    let library_list = new Library(['idk', 'idk2', 'idk3'])
+    library_list.addBook()
+    library_list.bookList()
+} 
+
+
+
+//----------------7--------------
+// შექმენი კლასი Password
+// ქონდეს მნიშვნელობა --> value
+// მეთოდები:
+// changePassword(newPass)
+// checkPassword() --> გამოაქვს შეცვლილი პაროლი
+
+function ClassWork7() {
+
+    class Password{
+
+        constructor(value){
+            this.value = value
+        }
+        
+        changePassword(newPass){
+            newPass = prompt('New Password: ')
+            this.value = newPass
+        }   
+        checkPassword(){
+            console.log(this.value)
+        }
+    }
+    let func_password = new Password('gabo123')
+    func_password.changePassword()
+    func_password.checkPassword()
+} 
