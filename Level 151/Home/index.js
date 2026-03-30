@@ -98,6 +98,7 @@ function ClassWork3() {
 }   
 
 
+
 //----------------4--------------
 // შექმენი კლასი Product, რომელსაც ექნება:
 // name, price, quantity
