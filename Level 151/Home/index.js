@@ -1,237 +1,97 @@
-//----------------1----------------
-// შექმენი კლასი Car, რომელსაც ექნება:
-// properties: brand, model, year
-// მეთოდი getInfo(), რომელიც აბრუნებს სტრინგს მანქანის შესახებ
+let numbers_1 = document.getElementById('num_1')
+let numbers_2 = document.getElementById('num_2')
+let numbers_3 = document.getElementById('num_3')
+let numbers_4 = document.getElementById('num_4')
+let numbers_5 = document.getElementById('num_5')
+let numbers_6 = document.getElementById('num_6')
+let numbers_7 = document.getElementById('num_7')
+let numbers_8 = document.getElementById('num_8')
+let numbers_9 = document.getElementById('num_9')
+let numbers_0 = document.getElementById('num_0')
 
-function ClassWork1() {
-    class Car {
+let resete_btn = document.getElementById('resete')
+let equal_btn = document.getElementById('equal')
+let delete_btn = document.getElementById('delete')
+let plus_btn = document.getElementById('plus')
+let minus_btn = document.getElementById('minus')
+let multi_btn = document.getElementById('multi')
+let divide_btn = document.getElementById('divide')
 
-        constructor(brand, model, year) {
-            this.brand = brand
-            this.model = model
-            this.year = year
-        }
+let input_num = document.getElementById('input_span')
 
-        getInfo() {
-            console.log(`i have ${this.brand} ${this.model} and it came out in ${this.year}`)
-        }
 
+function keyPad() {
+
+    for (let i = 0; i <= 1; i += 3) {
+        numbers_0.addEventListener('click', function () {
+            input_num.innerText += '0'
+            operator = ' '
+        })
+        numbers_1.addEventListener('click', function () {
+            input_num.innerText += '1'
+            operator = ' '
+        })
+        numbers_2.addEventListener('click', function () {
+            input_num.innerText += '2'
+            operator = ' '
+        })
+
+        numbers_3.addEventListener('click', function () {
+            input_num.innerText += '3'
+            operator = ' '
+        })
+
+        numbers_4.addEventListener('click', function () {
+            input_num.innerText += '4'
+            operator = ' '
+        })
+
+        numbers_5.addEventListener('click', function () {
+            input_num.innerText += '5'
+            operator = ' '
+        })
+
+        numbers_6.addEventListener('click', function () {
+            input_num.innerText += '6'
+            operator = ' '
+        })
+
+        numbers_7.addEventListener('click', function () {
+            input_num.innerText += '7'
+            operator = ' '
+        })
+
+        numbers_8.addEventListener('click', function () {
+            input_num.innerText += '8'
+            operator = ' '
+        })
+
+        numbers_9.addEventListener('click', function () {
+            input_num.innerText += '9'
+            operator = ' '
+        })
     }
-    let car_info = new Car('BMW', 'm5', 2026)
-    car_info.getInfo()
 }
 
+keyPad()
 
-//----------------2--------------
-// შექმენი კლასი User, რომელსაც ექნება:
-// name, age
-// მეთოდი changeName(newName) --> შეცვლის სახელს
-// მეთოდი increaseAge() ---> გაზრდის ასაკს თქვენთვის სასურველი რიცხვით
-// გამოიძახეთ ორივე ფუნქცია და ამის შემდეგ დააკონსოლლოგეთ მთლიანი ობიექტი
-
-function ClassWork2() {
-    class User {
-
-        constructor(name, age) {
-            this.name = name
-            this.age = age
-        }
-        changeName(newName) {
-
-            console.log(this.name = newName)
-
-        }
-
-        increaseAge(Age_plus) {
-            console.log(this.age + Age_plus)
-        }
-
+let sum = 0
+class Calculator {
+    constructor() {
     }
-    let user_info = new User('Gabo', 14)
-    user_info.changeName(prompt('Enter new name: '))
-    user_info.increaseAge(Number(promp('Age to add: ')))
-    console.log(user_info)
+
+    plus_add(a) {
+        sum += Number(a)
+        console.log(sum)
+    }
+
 }
+function calculate() {
 
+    let calc_class = new Calculator()
+    plus_btn.addEventListener('click', function () {
+        calc_class.plus_add(input_num.value)
+    })
 
-//----------------3--------------
-// შექმენი კლასი Calculator, რომელსაც ექნება მეთოდები:
-// add(a, b)
-// subtract(a, b)
-// multiply(a, b)
-// divide(a, b)
-
-function ClassWork3() {
-    
-    class Calculator {
-        constructor(first, second){
-            this.first = first
-            this.second = second
-        }
-    
-        add(a, b){
-            a = this.first
-            b = this.second
-            console.log(`add: ${a + b}`)
-        }
-        subtract(a, b){
-            a = this.first
-            b = this.second
-            console.log(`subtract: ${a - b}`)
-        }
-        multiply(a, b){
-            a = this.first
-            b = this.second
-            console.log(`multiply: ${a * b}`)
-        }
-        divide(a, b){
-            a = this.first
-            b = this.second
-            console.log(`divide: ${a / b}`)
-        }
-    }
-    let calc = new Calculator(Number(prompt('Num 1: ')), Number((prompt('Num 2: '))))
-    calc.add()
-    calc.subtract()
-    calc.multiply()
-    calc.divide()
-}   
-
-
-
-//----------------4--------------
-// შექმენი კლასი Product, რომელსაც ექნება:
-// name, price, quantity
-// მეთოდი getTotalPrice() → აბრუნებს მთლიან ფასს(ფასი გამრავლებული ოდენობაზე)
-
-function ClassWork4() {
-
-    class Product {
-        constructor(name, price, quantity){
-            this.name = name
-            this.price = price
-            this.quantity = quantity
-        }
-
-        getTotalPrice(){
-            console.log(`Total cost of ${this.name} is $${this.price * this.quantity}`)
-        }
-
-    }
-
-    let product_info = new Product('banana', 30, 2.99)
-    product_info.getTotalPrice()
-} 
-
-
-
-//----------------5--------------
-// შექმენი კლასი BankAccount, რომელსაც ექნება:
-// owner, balance
-// მეთოდი deposit(amount) --> შეგვაქვს თანხა ანგარიშზე და ბეჭდავს განახლებულ ბალანსს
-// მეთოდი withdraw(amount) --> გაგვაქვს თანხა ანგარიშიდან და ბეჭდავს დარჩენილ თანხას ანგარიშზე
-// დააკონსოლლოგეთ ბოლოს მთლიანი ობიექტი რომ ნახოთ შეცვლილი ობიექტი
-
-function ClassWork5() {
-
-    class BankAccount {
-
-        constructor(owner, balance){
-            this.owner = owner
-            this.balance = balance
-        }
-
-        ask(){
-            let option = Number(prompt('1.To deposit/ 2.To withdraw: ')) 
-            return option
-        }
-
-        deposit(amount){
-            amount = Number(prompt('To add: '))
-            console.log(`You deposited: ${amount} `)
-            console.log(`Your balance is ${this.balance + amount}`)
-        }
-
-        withdraw(amount){
-            amount = Number(prompt('To withdraw: '))
-            console.log(`You withdrawed: ${amount}: `)
-            console.log(`Your balance is ${this.balance - amount}`)
-        }
-
-    }
-    let bank_app = new BankAccount('Gabo', 50)
-    let choice = bank_app.ask()
-    if (choice == 1){
-        bank_app.deposit()
-    }
-    else if (choice == 2){
-        bank_app.withdraw()
-    }
-    else{
-        alert('Incorrect input')
-    }
-} 
-
-
-//----------------6--------------
-// შექმენი კლასი Library, რომელსაც ექნება:
-// books (მასივი)
-// მეთოდები:
-// addBook(book) ამატებს არგუმენტად გადაცემულ წიგნს სიის ბოლოში
-// bookList() --- ბეჭდავს სიას იმის შემდეგ რაც წიგნი დაემატა
-function ClassWork6() {
-
-    class Library{
-
-        constructor(books){
-            this.books = books
-        }
-
-
-        check(){
-            console.log(this.books)
-        }
-        addBook(book){
-            book = prompt('Add a book: ')
-            let list = this.books
-            list.push(book)
-        }
-        bookList(){
-            console.log(this.books)
-        }
-        
-    }
-    let library_list = new Library(['idk', 'idk2', 'idk3'])
-    library_list.addBook()
-    library_list.bookList()
-} 
-
-
-
-//----------------7--------------
-// შექმენი კლასი Password
-// ქონდეს მნიშვნელობა --> value
-// მეთოდები:
-// changePassword(newPass)
-// checkPassword() --> გამოაქვს შეცვლილი პაროლი
-
-function ClassWork7() {
-
-    class Password{
-
-        constructor(value){
-            this.value = value
-        }
-        
-        changePassword(newPass){
-            newPass = prompt('New Password: ')
-            this.value = newPass
-        }   
-        checkPassword(){
-            console.log(this.value)
-        }
-    }
-    let func_password = new Password('gabo123')
-    func_password.changePassword()
-    func_password.checkPassword()
-} 
+}
+calculate()
