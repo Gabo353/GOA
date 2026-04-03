@@ -19,7 +19,6 @@ let divide_btn = document.getElementById('divide')
 
 let input_num = document.getElementById('input_span')
 
-
 function keyPad() {
     numbers_0.addEventListener('click', function () {
         input_num.innerText += '0'
@@ -30,37 +29,29 @@ function keyPad() {
     numbers_2.addEventListener('click', function () {
         input_num.innerText += '2'
     })
-
     numbers_3.addEventListener('click', function () {
         input_num.innerText += '3'
     })
-
     numbers_4.addEventListener('click', function () {
         input_num.innerText += '4'
     })
-
     numbers_5.addEventListener('click', function () {
         input_num.innerText += '5'
     })
-
     numbers_6.addEventListener('click', function () {
         input_num.innerText += '6'
     })
-
     numbers_7.addEventListener('click', function () {
         input_num.innerText += '7'
     })
-
     numbers_8.addEventListener('click', function () {
         input_num.innerText += '8'
     })
-
     numbers_9.addEventListener('click', function () {
         input_num.innerText += '9'
     })
 }
 keyPad()
-
 
 let firstNumber = ''
 let secondNumber = ''
@@ -85,6 +76,7 @@ class Calculator {
     }
 }
 
+let res = 0
 
 plus_btn.addEventListener('click', function () {
     firstNumber = Number(input_num.innerText)
@@ -110,7 +102,7 @@ multi_btn.addEventListener('click', function () {
 equal_btn.addEventListener('click', function () {
     let secondNumber = Number(input_num.innerText.slice(1,input_num.innerText.length))
     let func_calc = new Calculator(firstNumber, secondNumber)
-    let res = 0
+    
 
     switch (operator) {
         case '+':
@@ -131,6 +123,7 @@ equal_btn.addEventListener('click', function () {
 })
 resete_btn.addEventListener('click', function () {
     input_num.innerHTML = ''
+    res = 0
 })
 delete_btn.addEventListener('click', function(){
     input_num.innerHTML = input_num.innerText.slice(0,-1)

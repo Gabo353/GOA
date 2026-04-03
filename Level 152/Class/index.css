@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+body>div:first-child {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#main_input {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    width: 220px;
+    font-size: 14px;
+}
+
+#sub {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #4f8cff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#sub:hover {
+    background: #3a6fd8;
+    transform: translateY(-1px);
+}
+
+#conteinment {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.note_div {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 15px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    transition: 0.2s ease;
+}
+
+.note_div:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.note_info {
+    font-size: 15px;
+    word-break: break-word;
+    flex: 1;
+}
+
+.count_span {
+    margin: 0 10px;
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+.delete_btn {
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s ease;
+}
+
+.delete_btn:hover {
+    background: #e04848;
+    transform: scale(1.05);
+}
+
+.check_box {
+    border: 2px solid grey;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+}
+
+.all_remvoe {
+
+    background: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s ease;
+    position: absolute;
+    height: 30px;
+    width: 130px;
+    left: 400px;
+
+}
+
+.all_remvoe:hover {
+
+    background: #e04848;
+    transform: scale(1.05);
+    
+}
