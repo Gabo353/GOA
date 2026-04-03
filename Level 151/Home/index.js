@@ -21,77 +21,117 @@ let input_num = document.getElementById('input_span')
 
 
 function keyPad() {
-
-    for (let i = 0; i <= 1; i += 3) {
-        numbers_0.addEventListener('click', function () {
-            input_num.innerText += '0'
-            operator = ' '
-        })
-        numbers_1.addEventListener('click', function () {
-            input_num.innerText += '1'
-            operator = ' '
-        })
-        numbers_2.addEventListener('click', function () {
-            input_num.innerText += '2'
-            operator = ' '
-        })
-
-        numbers_3.addEventListener('click', function () {
-            input_num.innerText += '3'
-            operator = ' '
-        })
-
-        numbers_4.addEventListener('click', function () {
-            input_num.innerText += '4'
-            operator = ' '
-        })
-
-        numbers_5.addEventListener('click', function () {
-            input_num.innerText += '5'
-            operator = ' '
-        })
-
-        numbers_6.addEventListener('click', function () {
-            input_num.innerText += '6'
-            operator = ' '
-        })
-
-        numbers_7.addEventListener('click', function () {
-            input_num.innerText += '7'
-            operator = ' '
-        })
-
-        numbers_8.addEventListener('click', function () {
-            input_num.innerText += '8'
-            operator = ' '
-        })
-
-        numbers_9.addEventListener('click', function () {
-            input_num.innerText += '9'
-            operator = ' '
-        })
-    }
-}
-
-keyPad()
-
-let sum = 0
-class Calculator {
-    constructor() {
-    }
-
-    plus_add(a) {
-        sum += Number(a)
-        console.log(sum)
-    }
-
-}
-function calculate() {
-
-    let calc_class = new Calculator()
-    plus_btn.addEventListener('click', function () {
-        calc_class.plus_add(input_num.value)
+    numbers_0.addEventListener('click', function () {
+        input_num.innerText += '0'
+    })
+    numbers_1.addEventListener('click', function () {
+        input_num.innerText += '1'
+    })
+    numbers_2.addEventListener('click', function () {
+        input_num.innerText += '2'
     })
 
+    numbers_3.addEventListener('click', function () {
+        input_num.innerText += '3'
+    })
+
+    numbers_4.addEventListener('click', function () {
+        input_num.innerText += '4'
+    })
+
+    numbers_5.addEventListener('click', function () {
+        input_num.innerText += '5'
+    })
+
+    numbers_6.addEventListener('click', function () {
+        input_num.innerText += '6'
+    })
+
+    numbers_7.addEventListener('click', function () {
+        input_num.innerText += '7'
+    })
+
+    numbers_8.addEventListener('click', function () {
+        input_num.innerText += '8'
+    })
+
+    numbers_9.addEventListener('click', function () {
+        input_num.innerText += '9'
+    })
 }
-calculate()
+keyPad()
+
+
+let firstNumber = ''
+let secondNumber = ''
+let operator = ''
+
+class Calculator {
+    constructor(old, current) {
+        this.old = old
+        this.current = current
+    }
+    plus() {
+        return this.old + this.current
+    }
+    minus() {
+        return this.old - this.current
+    }
+    divd() {
+        return this.old / this.current
+    }
+    multi() {
+        return this.old * this.current
+    }
+}
+
+
+plus_btn.addEventListener('click', function () {
+    firstNumber = Number(input_num.innerText)
+    operator = '+'
+    input_num.innerHTML = '+'
+})
+minus_btn.addEventListener('click', function () {
+    firstNumber = Number(input_num.innerText)
+    operator = '-'
+    input_num.innerHTML = '-'
+})
+divide_btn.addEventListener('click', function () {
+    firstNumber = Number(input_num.innerText)
+    operator = '/'
+    input_num.innerHTML = '/'
+})
+multi_btn.addEventListener('click', function () {
+    firstNumber = Number(input_num.innerText)
+    operator = '*'
+    input_num.innerHTML = '*'
+})
+
+equal_btn.addEventListener('click', function () {
+    let secondNumber = Number(input_num.innerText.slice(1,input_num.innerText.length))
+    let func_calc = new Calculator(firstNumber, secondNumber)
+    let res = 0
+
+    switch (operator) {
+        case '+':
+            res = func_calc.plus()
+            break;
+        case '-':
+            res = func_calc.minus()
+            break;
+        case '/':
+            res = func_calc.divd()
+            break;
+        case '*':
+            res = func_calc.multi()
+            break;
+    }
+    input_num.innerHTML = res
+    console.log(res)
+})
+resete_btn.addEventListener('click', function () {
+    input_num.innerHTML = ''
+})
+delete_btn.addEventListener('click', function(){
+    input_num.innerHTML = input_num.innerText.slice(0,-1)
+})
