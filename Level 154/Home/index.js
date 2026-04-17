@@ -8,12 +8,10 @@
 
 function ClassWork1() {
     let map = new Map()
-    map.set('name', 'goga')
-    map.set('age', 20)
+    map.set('name', 'goga').set('age', 20)
     console.log(map.get('name'))
     console.log(map.get('age'))
 }
-
 
 
 //--------------2---------------
@@ -30,11 +28,10 @@ function ClassWork2() {
         ["banana", 3]
     ])
 
-    map.has('apple') ? console.log('არის') : console.log('არ არის')
-    map.has('orange') ? console.log('არის') : console.log('არ არის')
+    map.has('apple') ? console.log('ვაშლი არის') : console.log('ვაშლი არ არის')
+    map.has('orange') ? console.log('მსხალი არის') : console.log('მსხალი არ არის')
 
 }
-
 
 
 //--------------3---------------
@@ -88,7 +85,6 @@ function ClassWork5() {
         ["z", 30]
     ]);
 
-    //----keys-----
     for (const key of map.keys()) {
         console.log(key)
     }
@@ -96,7 +92,6 @@ function ClassWork5() {
 
     console.log('-------------------------')
 
-    //----values----
     for (const key of map.values()) {
         console.log(key)
     }
@@ -104,8 +99,6 @@ function ClassWork5() {
 
 
 }
-
-
 
 
 //--------------6---------------
@@ -126,7 +119,6 @@ function ClassWork6() {
 }
 
 
-
 //--------------7---------------
 // ერთ ხაზში (chain-ით) შექმენი Map და დაამატე:
 // "a" → 1
@@ -139,7 +131,6 @@ function ClassWork7() {
     map.set('a', 1).set('b', 2).set('c', 3)
     console.log(map)
 }
-
 
 
 //--------------8---------------
@@ -239,7 +230,6 @@ function ClassWork12() {
 }   
 
 
-
 //--------------13---------------
 // შექმენი Map:
 // key = "even" / "odd"
@@ -253,4 +243,3 @@ function ClassWork13() {
     numbers.forEach(x => x % 2 == 0 ? map.get('even').push(x) : map.get('odd').push(x))
     console.log(map)
 } 
-ClassWork13()
