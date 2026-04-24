@@ -24,8 +24,9 @@
 let player1Bag = new Set(["Wolf Skin", "Water", "Glowspore"])
 let player2Bag = new Set([ "Bloodthorn","Acid", "Glowspore"])
 
-let Union_bag = new Set()
+
 function createGuildStash(bag1, bag2) {
+    let Union_bag = new Set()
     bag1.forEach(x => Union_bag.add(x))
     bag2.forEach(x => Union_bag.add(x))
     console.log(Union_bag)
@@ -88,13 +89,6 @@ function getTradeableItems(bag1, bag2){
 getTradeableItems(player1Bag,player2Bag)
 
 
-
-// ნაბიჯი 5: ნაგვის გაფილტვრა (Array filtering with Set)
-// მოთამაშემ ტყეში იპოვა ბევრი ნივთი, თუმცა ზოგიერთი უსარგებლოა:
-// const gatheredLoot = ["Wood", "Rotten Flesh", "Bloodthorn", "Mud", "Wood", "Crystal", "Mud"];
-// შექმენი Set სახელად trashItems (შიგნით ჩაწერე "Rotten Flesh" და "Mud").
-// დაწერე ფუნქცია cleanLoot(lootArray, trashSet), რომელიც გადაურბენს მოპოვებული ნივთების მასივს, ამოაგდებს ნაგავს (გამოიყენე Set.has() ოპერაციის სისწრაფისთვის) და დააბრუნებს მხოლოდ სუფთა, უნიკალური სასარგებლო ნივთების Set-ს.
-
 const gatheredLoot = ["Wood", "Rotten Flesh", "Bloodthorn", "Mud", "Wood", "Crystal", "Mud"]
 
 let trashItems = new Set(["Rotten Flesh","Mud"])
@@ -107,7 +101,7 @@ function cleanLoot(lootArray, trashSet) {
         }
     }
     console.log([...useful])
-    return useful;
+    return useful
 }
 
 cleanLoot(gatheredLoot, trashItems)
