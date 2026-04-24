@@ -22,13 +22,13 @@ let task_strings = ''
 btn_sub.addEventListener('click', function () {
 
     if (input.value.length === 0) { return; }
-    let li = document.createElement('div')
+    let div = document.createElement('div')
     let remove = document.createElement('button')
-    li.innerText = input.value
+    div.innerText = input.value
     ul.style.display = 'flex'
     remove.innerText = 'remove'
     remove.id = 'remove_btn'
-    arr.push(li.innerText)
+    arr.push(div.innerText)
     input.value = ''
     let current_task = arr[arr.length - 1]
     task_strings += current_task + ','
@@ -38,15 +38,18 @@ btn_sub.addEventListener('click', function () {
     localStorage.setItem('taskList', task_strings)
 
     btn_ref.addEventListener('click', function () {
-        ul.append(li, remove)
-        document.body.append(li)
+        ul.append(div, remove)
+        document.body.append(div)
     })
     remove.addEventListener('click', function () {
-        li.remove()
+        div.remove()
         remove.remove()
-        console.log(task_strings)
-
-
+        let match_index = arr.indexOf(div.innerText)
+        if (match_index !== -1) {
+            arr.splice(match_index, 1)
+        }
+        task_strings = arr.join(',') + ',' 
+        localStorage.setItem('taskList', task_strings)
     })
 
 })  
