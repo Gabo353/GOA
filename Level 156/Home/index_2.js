@@ -1,22 +1,3 @@
-// 3)გვერდზე გაქვს ქუაუნთერი + -  და reset ღილაკებით
-// დავალება:
-// ყოველ დაჭერაზე counter იზრდება 1 ით
-// მნიშვნელობა ინახება localStorage-ში
-// refresh-ზე არ ნულდება
-
-// 4)TODO app --- > input + add button
-// დავალება:
-// დაამატე task-ები სიაში
-// შეინახე localStorage-ში
-// refresh-ზე ყველა task დაბრუნდეს
-
-// 5)წინა დავალებას დაამატე:
-// დავალება:
-// თითო task-ს ჰქონდეს delete ღილაკი
-// წაშლისას localStorage-იც განახლდეს.
-
-
-
 //----------------2---------------
 // გვერდზე გაქვს ღილაკი "Toggle Theme"
 // დავალება:
@@ -43,7 +24,6 @@ function bg_change(theme){
 }
 bg_change(theme)
 button.addEventListener('click', function(){
-
     switch (theme){
         case 'white':
             theme = 'black'

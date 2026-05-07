@@ -3,8 +3,6 @@
 // თითო task-ს ჰქონდეს delete ღილაკი
 // წაშლისას localStorage-იც განახლდეს.
 
-
-
 //----------------4---------------
 // TODO app --- > input + add button
 // დავალება:
@@ -48,8 +46,6 @@ btn_sub.addEventListener('click', function () {
         if (match_index !== -1) {
             arr.splice(match_index, 1)
         }
-        task_strings = arr.join(',') + ',' 
         localStorage.setItem('taskList', task_strings)
     })
-
 })  
