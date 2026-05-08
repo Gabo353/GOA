@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color: #0d0d0d;
+    font-family: 'Roboto';
+
+}
+.To_do{
+
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+img{
+    width: 40px;
+}
+header{
+
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 300px;
+
+}   
+#contain_div{
+
+    width: 600px;
+    height: 230px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-left: 550px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#txt_div{
+    height: 150px;
+    width: 200px;
+    display: flex;
+    align-items: start;
+    flex-flow: column;
+    padding: 70px;
+    position: relative;
+    top: 30px;
+}
+.moto_txt,.moto_txt_2{
+    color: white;
+    font-size: 35px;
+    font-weight: 350;
+    letter-spacing: 1%;
+}
+.moto_txt_2{
+    font-size: 30px;
+}
+#circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #88ab33;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#count{
+    font-size: 50px;
+}
+#user_UI{
+    display: flex;
+    gap: 10px;
+    margin-left: 550px;
+    margin-top: 50px;
+}
+#input{
+    background-color: #1f2936;
+    border: none;
+    height: 55px;
+    width: 520px;
+    border-radius: 15px;
+    padding-left: 20px;
+    color: white;
+}
+#add{
+    background-color: #88ab33;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addd_img{
+    width: 30px;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    width: 600px; 
+    height: 50px;
+    border: 1px solid white;  
+    padding: 20px; 
+    margin-left: 530px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.inner_div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.mini_circle{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #22c55e;
+    border-radius: 50%;
+}
+.tasks_span{
+    color: white;
+    font-size: 20px;
+}
+.Task_bar{
+    display: flex;
+    align-items: center;
+}
