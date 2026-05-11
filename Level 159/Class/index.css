@@ -129,3 +129,36 @@ header{
     display: flex;
     align-items: center;
 }
+.done_btn{
+    height: 30px;
+    width: 50px;
+    background-color: #22c55e;
+    border: none;
+    border-radius: 10px;
+}
+.done_input{
+    background-color: #1f2936;
+    border: none;
+    height: 45px;
+    width: 450px;
+    border-radius: 13px;
+    padding-left: 20px;
+    color: white;
+}
+#delete_all{
+    background-color: #1f2936;
+    height: 35px;
+    width: 550px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 580px;
+    margin-bottom: 30px;
+    color: white;
+}
+#delete_all:hover{
+    background-color: rgba(255, 0, 0, 0.692);
+    color: white;
+    transition: 0.4s;
+}
