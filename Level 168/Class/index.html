@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="main_UI">
+      <div id="inner_main_UI">
+        <div id="input_UI">
+          <input type="text" placeholder="Search Location..." id="city" />
+          <!-- <img src="./Img/search_30dp_WHITE_FILL0_wght400_GRAD0_opsz24.png" alt="Search" id="loop"> -->
+          <button id="btn">Submit</button>
+        </div>
+        <hr />
+        <br /><br />
+        <span id="idk">Weather Details about...</span>
+        <br /><br /><br />
+        <div id="bla">
+            <span id="weather_type">Sunny</span>
+            <img src="" alt="" id="changeble_img">
+        </div>
+        <br><br>
+        <div id="weather_info">
+          <div id="temp_max">
+            <span>Temp max</span>
+            <div class="div_for_stats less_space">
+              <span id="max_span">19°</span>
+              <img src="./Img/hot.png" alt="Hot" id="first_img" />
+            </div>
+          </div>
+          <br>
+          <div id="temp_min">
+            <span>Temp max</span>
+            <div class="div_for_stats">
+              <span id="min_span">15°</span>
+              <img src="./Img/cold.png" alt="Hot" id="first_img" />
+            </div>
+          </div>
+          <br>
+          <div id="huma">
+            <span>Humadity</span>
+            <div class="div_for_stats">
+              <span id="huma_span">58%</span>
+              <img src="./Img/drop.png" alt="Hot" id="first_img" />
+            </div>
+          </div>
+          <br>
+          <div id="cloud">
+            <span>Cloudy</span>
+            <div class="div_for_stats">
+              <span id="cloud_span">86%</span>
+              <img src="./Img/cloud.png" alt="Hot" id="first_img" />
+            </div>
+          </div>
+          <br>
+          <div id="wind">
+            <span>Wind</span>
+            <div class="div_for_stats">
+              <span id="wind_span">5km/h</span>
+              <img src="./Img/wind.png" alt="Hot" id="first_img" />
+            </div>
+          </div>
+          <br><br><br><br>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

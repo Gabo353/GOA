@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: lightblue;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blue;
+    font-family: 'Roboto';
+    background-image: url(./Img/5eea1fb6-3a3a-4379-95a7-98bfcb313e7f.txt);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#input_UI{
+    display: flex;
+    height: 50px;
+    width: 450px;
+    align-items: center;
+    justify-content: space-between;
+}
+#city{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #8699a1;
+}
+#main_UI{
+    width: 500px;
+    background: rgba(128, 128, 128, 0.468);
+    height: 100%;
+    margin-left: 1206.5px;
+}
+#inner_main_UI{
+    width: 450px; 
+    padding: 25px; 
+    height: 700px;
+}
+#idk{
+    color: white;
+}
+#weather_type{
+    color: white;
+}
+#temp_max,#temp_min,#huma,#cloud,#wind{
+    color: rgba(128, 128, 128, 0.688);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div_for_stats{
+    display: flex;
+    gap: 20px;
+}
+.less_space{
+    display: flex;
+    gap: 25px;
+}
+#bla{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#changeble_img{
+    width: 35px;
+}
+#max_span,#min_span,#huma_span,#wind_span,#cloud_span{
+    color: white;
+}
