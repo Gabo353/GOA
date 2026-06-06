@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: blue;
     font-family: 'Roboto';
     background-image: url(./Img/5eea1fb6-3a3a-4379-95a7-98bfcb313e7f.txt);
     background-position: center;
@@ -24,17 +23,23 @@ body {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     color: #8699a1;
+    font-size: 18px;
 }
 #main_UI{
     width: 500px;
-    background: rgba(128, 128, 128, 0.468);
-    height: 100%;
-    margin-left: 1206.5px;
+    height: 100vh;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 5px solid rgba(255, 255, 255, 0.15);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
 }
 #inner_main_UI{
     width: 450px; 
     padding: 25px; 
     height: 700px;
+    
 }
 #idk{
     color: white;
@@ -66,4 +71,42 @@ body {
 }
 #max_span,#min_span,#huma_span,#wind_span,#cloud_span{
     color: white;
+}
+#left_panel{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 510px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#short_c{
+    color: white;
+    font-size: 78px;
+}
+#name_of_city{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 110px;
+}
+#time{
+    color: white;
+    position: absolute;
+    bottom: 90px;
+}
+#time_2{
+    color: white;
+    position: absolute;
+    bottom: 88.5px;
+    right: -5px;
+}
+#bigger_icon{
+    position: absolute;
+    bottom: 80px;
+    left: 320px;
+    width: 80px;
 }

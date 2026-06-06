@@ -9,6 +9,13 @@ let temp_max_span = document.getElementById('max_span')
 let temp_min_span = document.getElementById('min_span')
 let location_span = document.getElementById('idk')
 
+let left_city_name = document.getElementById('name_of_city')
+let left_temp_c = document.getElementById('short_c')
+let left_weather_icon = document.getElementById('bigger_icon')
+
+let time_1 = document.getElementById('time')
+let time_2 = document.getElementById('time_2')
+
 function weather() {
   let http = new XMLHttpRequest();
   let city = city_name.value
@@ -21,23 +28,86 @@ function weather() {
         let country = data.location.country
         let huma = data.current.humidity
         let temp_max = data.current.temp_c
-        let temp_min = Number(data.current.temp_c) - 4
+        let temp_min = data.current.temp_f
         let cloud = data.current.cloud
         let wind = data.current.wind_kph
         let icon_weather = data.current.condition.icon
 
+        let time_hr = data.current.last_updated
+
         icon_weather_img.src = icon_weather
+        left_weather_icon.src = icon_weather
         icon_weather_span.innerText = data.current.condition.text
 
         humma.innerText = `${huma}%`
         cloudd.innerText = `${cloud}%`
         windd.innerText = `${wind}km/h`
         temp_max_span.innerText = `${temp_max}°`
-        temp_max_span.innerText = `${temp_min}°`
+        temp_min_span.innerText = `${temp_min}°`
 
         location_span.innerText = `Weather Details about: ${city} in ${country}`
+        left_city_name.innerText = city
+        left_temp_c.innerText = `${temp_max}°`
 
-        console.log(city,cloud,wind)
+        let arr_for_time = [...time_hr]
+        let hr = arr_for_time.splice(11,arr_for_time.length)
+        time_1.innerText = `${hr.join('')} - Monday, `
+
+        let date_year = arr_for_time.splice(2,2)
+        let year = date_year.join('')
+        
+        let date_day = arr_for_time.splice(6,6)
+        let exact_date_day = date_day.pop()
+        let day = date_day.join('')
+        if (day[0] == '0'){
+          day = day[1]
+        }
+
+        let date_month = arr_for_time.splice(3,4)
+        let exact_date_month = date_month.pop()
+        let month = date_month.join('')
+
+        switch(month){
+          case '01':
+            month = 'Jan'
+            break;
+          case '02':
+            month = 'Feb'
+            break;
+          case '03':
+            month = 'Mar'
+            break;
+          case '04':
+            month = 'Apr'
+            break;
+          case '05':
+            month = 'May'
+            break;
+          case '06':
+            month = 'June'
+            break;
+          case '07':
+            month = 'July'
+            break;
+          case '08':
+            month = 'Aug'
+            break;
+          case '09':
+            month = 'Sep'
+            break;
+          case '10':
+            month = 'Oct'
+            break;
+          case '11':
+            month = 'Nov'
+            break;
+          case '12':
+            month = 'Dec'
+            break;
+          default:
+        }
+        console.log(month)
+        console.log(time_hr)
         console.log(data)
       } 
     }
@@ -51,3 +121,8 @@ function weather() {
 buton.addEventListener('click', function(){
     weather()
 })
+city_name.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        weather();
+    }
+});
